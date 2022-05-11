@@ -1,0 +1,115 @@
+using Opsive.Shared.Events;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using EventHandler = Opsive.Shared.Events.EventHandler;
+
+public class BaseStateMachine : MonoBehaviour
+{
+    public EnemyHpController hpController;
+    public Collider mainCollider;
+
+    [NonSerialized] public Transform currentTarget;
+    [NonSerialized] public bool isStateMachineRunning = false;
+    [NonSerialized] public RobotsSpawner spawnerRoot;
+
+    [SerializeField] private List<BaseState> avaliableStates;
+    [SerializeField] private BaseState startState;
+
+    private List<BaseTransition> currentStateTransitions;
+
+    public BaseState CurrentState { get; private set; }
+
+    void Awake()
+    {
+        EventHandler.RegisterEvent(gameObject, "Death", OnDeath);
+        InitializeStateTransitions();
+    }
+
+    private void Update()
+    {
+        if (isStateMachineRunning)
+        {
+            if (CurrentState.IsCompleted)
+            {
+                CheckTransitions();
+            }
+        }
+    }
+
+    private void ActivateState(BaseState stateToActivate)
+    {
+        StopAllCoroutines();
+        CurrentState = stateToActivate;
+        CurrentState.enabled = true;
+        currentStateTransitions = CurrentState.stateTransitions;
+    }
+
+    private void CheckTransitions()
+    {
+        foreach (var transition in currentStateTransitions)
+        {
+            if (transition.IsInitializedSuccessfully)
+            {
+                var (isMetRequierements, newTransitionState) = transition.CheckTransitionRequirements();
+                if (isMetRequierements)
+                {
+                    SetNewState(newTransitionState);
+                    break;
+                }
+            }
+        }
+    }
+
+    private void SetNewState(BaseState newState)
+    {
+        CurrentState.enabled = false;
+        ActivateState(newState);
+    }
+
+    private void InitializeStateTransitions()
+    {
+        foreach(var state in avaliableStates)
+        {
+            foreach(var transition in state.stateTransitions)
+            {
+                transition.InitializeTransition(this);
+            }
+        }
+    }
+
+    private void OnDeath()
+    {
+        var dieState = avaliableStates.Find(state => state is DieState);
+
+        if (dieState != null)
+        {
+            SetNewState(dieState);
+        }
+        else
+        {
+            Debug.LogError($"DieState not set on {name} enemy!");
+            CurrentState.enabled = false;
+            isStateMachineRunning = false;
+        }
+    }
+
+    private void OnDestroy()
+    {
+        EventHandler.UnregisterEvent(gameObject, "Death", OnDeath);
+    }
+
+    public void ActivateStartState()
+    {
+        ActivateState(startState);
+        isStateMachineRunning = true;
+    }
+
+    public void ResetStateMachine()
+    {
+        isStateMachineRunning = false;
+        CurrentState.enabled = false;
+        CurrentState = startState;
+    }
+}
