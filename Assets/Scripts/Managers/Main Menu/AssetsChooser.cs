@@ -7,15 +7,19 @@ using UnityEngine.UI;
 
 public class AssetsChooser : MonoBehaviour
 {
-    public Image avatarPreview;
-    public Image spearPreview;
-    public Button nextAvatarButton;
-    public Button previousAvatarButton;
-    public Button nextSpearButton;
-    public Button previousSpearButton;
-    public Button playButton;
-    public TMP_Text avatarDataTMP;
-    public TMP_Text spearDataTMP;
+    [SerializeField] private Image avatarPreview;
+    [SerializeField] private Image spearPreview;
+    [SerializeField] private Button nextAvatarButton;
+    [SerializeField] private Button previousAvatarButton;
+    [SerializeField] private Button nextSpearButton;
+    [SerializeField] private Button previousSpearButton;
+    [SerializeField] private Button playButton;
+    [SerializeField] private TMP_Text avatarDataTMP;
+    [SerializeField] private TMP_Text spearDataTMP;
+    [SerializeField] private TMP_Text currentSpearIndexTMP;
+    [SerializeField] private TMP_Text maxSpearsCountTMP;
+    [SerializeField] private TMP_Text currentAvatarIndexTMP;
+    [SerializeField] private TMP_Text maxAvatarsCountTMP;
 
     private int spearPreviewIndex = 0;
     private int avatarPreviewIndex = 0;
@@ -27,31 +31,30 @@ public class AssetsChooser : MonoBehaviour
     {
         playButton.interactable = true;
         InitializeAssets();
+        VerifyAssets();
     }
 
     public void OnDisable()
     {
-        if (CheckAvaliableAssets(userSpears))
-        {
-            spearPreviewIndex = 0;
-            ChangeSpear();
-        }
-        if (CheckAvaliableAssets(userAvatars))
-        {
-            avatarPreviewIndex = 0;
-            ChangeAvatar();
-        }
+        avatarDataTMP.text = string.Empty;
+        spearDataTMP.text = string.Empty;
+        avatarPreviewIndex = 0;
+        spearPreviewIndex = 0;
     }
 
     public void OnAvatarPreviewChange(int indexStep)
     {
         avatarPreviewIndex += indexStep;
+        avatarPreviewIndex = CheckPreviewIndex(avatarPreviewIndex, userAvatars.Count);
+        currentAvatarIndexTMP.text = (avatarPreviewIndex+1).ToString();
         ChangeAvatar();
     }
 
     public void OnSpearPreviewChange(int indexStep)
     {
         spearPreviewIndex += indexStep;
+        spearPreviewIndex = CheckPreviewIndex(spearPreviewIndex, userSpears.Count);
+        currentSpearIndexTMP.text = (spearPreviewIndex + 1).ToString();
         ChangeSpear();
     }
 
@@ -67,6 +70,20 @@ public class AssetsChooser : MonoBehaviour
         TotemManager.Instance.currentSpear = userSpears[spearPreviewIndex];
     }
 
+    private int CheckPreviewIndex(int currentValue, int maxValue)
+    {
+        if (currentValue >= maxValue)
+        {
+            return 0;
+        }
+        else if (currentValue < 0)
+        {
+            return maxValue - 1;
+        }
+
+        return currentValue;
+    }
+
     private void ChangeAvatar()
     {
         //To do: change to  userAvatars[avatarPreviewIndex].avatarPreview
@@ -79,7 +96,6 @@ public class AssetsChooser : MonoBehaviour
             $"Sex: {newAvatarPreview.sex}" +
             $"Skin color: {newAvatarPreview.skinColor}";
         avatarDataTMP.text = avatarData;
-        CheckPreviewButtonsState(avatarPreviewIndex, userAvatars.Count, previousAvatarButton, nextAvatarButton);
     }
 
     private void ChangeSpear()
@@ -92,30 +108,17 @@ public class AssetsChooser : MonoBehaviour
             $"Shaft color: {newSpearPreview.shaftColor}\n" +
             $"Tip material: {newSpearPreview.tipMaterial}";
         spearDataTMP.text = spearData;
-        CheckPreviewButtonsState(spearPreviewIndex, userSpears.Count, previousSpearButton, nextSpearButton);
-    }
-
-    private void CheckPreviewButtonsState(int index, int totalItems, Button previousButton, Button nextButton)
-    {
-        nextButton.interactable = index + 1 >= totalItems ? false : true;
-        previousButton.interactable = index == 0 ? false : true;
     }
 
     private void InitializeAssets()
     {
         userSpears = TotemManager.Instance.currentUser.GetOwnedSpears();
         userAvatars = TotemManager.Instance.currentUser.GetOwnedAvatars();
-        if (CheckAvaliableAssets(userSpears))
-        {
-            ChangeSpear();
-        }
-        if (CheckAvaliableAssets(userAvatars))
-        {
-            ChangeAvatar();
-        }
+        maxSpearsCountTMP.text = userSpears.Count.ToString();
+        maxAvatarsCountTMP.text = userAvatars.Count.ToString();
     }
 
-    private bool CheckAvaliableAssets<T>(List<T> asstetsList)
+    private bool CheckAvaliableAssets<T>(List<T> asstetsList, Button nextButton, Button previousButton)
     {
         if (asstetsList == null || asstetsList.Count == 0)
         {
@@ -123,8 +126,33 @@ public class AssetsChooser : MonoBehaviour
             {
                 playButton.interactable = false;
             }
+            nextButton.interactable = false;
+            previousButton.interactable = false;
             return false;
         }
         return true;
+    }
+
+    private void VerifyAssets()
+    {
+        if (CheckAvaliableAssets(userSpears, nextSpearButton, previousSpearButton))
+        {
+            ChangeSpear();
+            currentSpearIndexTMP.text = "1";
+        }
+        else
+        {
+            currentSpearIndexTMP.text = "0";
+        }
+
+        if (CheckAvaliableAssets(userAvatars, nextAvatarButton, previousAvatarButton))
+        {
+            ChangeAvatar();
+            currentAvatarIndexTMP.text = "1";
+        }
+        else
+        {
+            currentAvatarIndexTMP.text = "0";
+        }
     }
 }

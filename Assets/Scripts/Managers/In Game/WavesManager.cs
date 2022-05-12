@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class WavesManager : MonoBehaviour
 {
-    [SerializeField] private float waveStartDelay = 0;
+    [SerializeField] private int waveStartDelay = 0;
     [SerializeField] private int wavesCount = 0;
 
     private int totalWaveEnemies = 0;
@@ -30,11 +30,13 @@ public class WavesManager : MonoBehaviour
     private void OnGetWaveEnemiesCount(int enemiesCount)
     {
         totalWaveEnemies += enemiesCount;
+        GameplayUIManager.Instance.SetTotalEnemies(totalWaveEnemies);
     }
 
     private void OnRobotKilled()
     {
         totalWaveEnemies--;
+        GameplayUIManager.Instance.OnRobotDied();
         if (totalWaveEnemies == 0)
         {
             if (currentWave+1 < wavesCount)
@@ -51,6 +53,7 @@ public class WavesManager : MonoBehaviour
 
     private IEnumerator StartNewWave()
     {
+        GameplayUIManager.Instance.StartWaveCountdown(waveStartDelay);
         yield return new WaitForSeconds(waveStartDelay);
         EventHandler.ExecuteEvent("StartNewWave", currentWave);
     }
