@@ -29,8 +29,8 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - EnemyHitBox
+  - InvisibleWall
   - Pickup
   - Ground
   - RangedSpear
