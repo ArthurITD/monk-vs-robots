@@ -25,11 +25,13 @@ public class CharacterControllerHelper : MonoBehaviour
     private HairStyleEnum hairStyle;
     private CharacterType characterType;
     private GameEndedAbility gameEndedAbility;
+    private bool isGameEnded = false;
+    private GameEndedType gameEndedType;
 
     public GameObject Character { get; private set; }
     public static CharacterControllerHelper Instance { get; private set; }
 
-    void Awake()
+    public void Awake()
     {
         if(Instance == null)
         {
@@ -41,6 +43,14 @@ public class CharacterControllerHelper : MonoBehaviour
 
         EventHandler.RegisterEvent("GameRestarted", OnGameRestarted);
         EventHandler.RegisterEvent<GameEndedType>("GameEnded", OnGameEnded);
+    }
+
+    public void CheckIsGameEnded()
+    {
+        if (isGameEnded)
+        {
+            OnGameEnded(gameEndedType);
+        }
     }
 
     private void InitializeAvatar()
@@ -89,6 +99,8 @@ public class CharacterControllerHelper : MonoBehaviour
     private void OnGameEnded(GameEndedType gameEndedType)
     {
         //To Do: use gameEndedType to define Win or Lose ability
+        isGameEnded = true;
+        this.gameEndedType = gameEndedType;
         GetGameEndedAbility();
         foreach(var ability in characterLocomotion.ActiveAbilities)
         {
@@ -102,6 +114,7 @@ public class CharacterControllerHelper : MonoBehaviour
 
     private void OnGameRestarted()
     {
+        isGameEnded = false;
         GetGameEndedAbility();
         characterLocomotion.TryStopAbility(gameEndedAbility, true);
         characterHealth.Heal(attributeManager.GetAttribute(Constants.HEALTH_ATTRIBUTE_NAME).MaxValue);

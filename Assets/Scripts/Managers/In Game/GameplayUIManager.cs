@@ -95,7 +95,7 @@ public class GameplayUIManager : MonoBehaviour
     {
         killedEnemiesCount = 0;
         killedEnemiesText.text = "0";
-        currentWaveText.text = $"Wave {currentWave++}";
+        currentWaveText.text = $"Wave {currentWave+1}";
         waveCountdownPanel.SetActive(false);
         waveEnemiesPanel.SetActive(true);
     }

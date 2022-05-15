@@ -30,6 +30,7 @@ public class RobotsSpawner : MonoBehaviour
 
         EventHandler.RegisterEvent<int>("StartNewWave", OnStartNewWave);
         EventHandler.RegisterEvent<BaseStateMachine>(this, "RobotDied", OnRobotDied);
+        EventHandler.RegisterEvent<GameEndedType>("GameEnded", OnGameEnded);
         EventHandler.RegisterEvent("GameRestarted", OnGameRestarted);
     }
 
@@ -117,11 +118,20 @@ public class RobotsSpawner : MonoBehaviour
         }
     }
 
+    private void OnGameEnded(GameEndedType gameEndedType)
+    {
+        if(gameEndedType == GameEndedType.Lose)
+        {
+            StopAllCoroutines();
+        }
+    }
+
     private void OnDestroy()
     {
         StopAllCoroutines();
         EventHandler.UnregisterEvent<int>("StartNewWave", OnStartNewWave);
         EventHandler.UnregisterEvent<BaseStateMachine>(gameObject, "RobotDied", OnRobotDied);
         EventHandler.UnregisterEvent("GameRestarted", OnGameRestarted);
+        EventHandler.UnregisterEvent<GameEndedType>("GameEnded", OnGameEnded);
     }
 }

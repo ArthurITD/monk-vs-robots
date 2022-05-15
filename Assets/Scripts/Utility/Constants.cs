@@ -8,6 +8,7 @@ public static class Constants
 
     public const int PICKUP_LAYER_INDEX = 20;
     public const int RANGED_SPEAR_LAYER_INDEX = 22;
+    public const int MELEE_SPEAR_LAYER_INDEX = 23;
 
     public const float VOLUME_RECALCULATION_COEF = 100.0f;
     public const float VOLUME_DEFAULT_VALUE = 1;
