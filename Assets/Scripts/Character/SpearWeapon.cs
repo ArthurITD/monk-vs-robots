@@ -12,9 +12,9 @@ public class SpearWeapon : MonoBehaviour
 
     [SerializeField] private TipMaterialEnumGameObjectDictionary tipTypes;
     [SerializeField] private Material spearShaftMaterial;
-    [SerializeField] private Collider spearShaftCollider;
+    [SerializeField] private SpearPickup spearPicker;
+    [SerializeField] private Collider spearPickupCollider;
     [SerializeField] private SpearRanged spearRangedController;
-    [SerializeField] private PickupItem spearPicker;
     [SerializeField] private CameraController characterCameraController;
 
     private TipMaterialEnum tipMaterial;
@@ -24,6 +24,7 @@ public class SpearWeapon : MonoBehaviour
     private HitDetector weaponHitDetector;
     private Collider spearTipCollider;
     private int nonCriticalAttacks = 0;
+    private float damageMultiplier = 1;
 
     private Transform parentRoot;
     private Vector3 startPosition;
@@ -38,7 +39,7 @@ public class SpearWeapon : MonoBehaviour
         InitializeSpear(TotemManager.Instance.currentSpear);
 
         EventHandler.RegisterEvent<bool>(character, "OnHitActivate", EnableHitCollider);
-        EventHandler.RegisterEvent(character,"OnThrowSpear", OnSpearThrow);
+        EventHandler.RegisterEvent<float>(character,"OnThrowSpear", OnSpearThrow);
         EventHandler.RegisterEvent(gameObject, "OnSpearLanded", OnSpearLanded);
         EventHandler.RegisterEvent(gameObject, "OnSpearPickedUp", OnSpearPickedUp);
         EventHandler.RegisterEvent("GameRestarted", OnGameRestarted);
@@ -86,6 +87,7 @@ public class SpearWeapon : MonoBehaviour
             {
                 weaponHitDetector.damageInfo.damageAmount = weaponHitDetector.damageInfo.baseDamage;
             }
+            weaponHitDetector.damageInfo.damageAmount *= damageMultiplier;
         }
         else
         {
@@ -111,23 +113,27 @@ public class SpearWeapon : MonoBehaviour
         return false;
     }
 
-    private void OnSpearThrow()
+    private void OnSpearThrow(float chargeMultiplier)
     {
-        EnableHitCollider(true);
-        characterCameraController.CanZoom = false;
+        damageMultiplier = chargeMultiplier;
+        spearRangedController.forceMultiplier = chargeMultiplier;
+
         gameObject.layer = Constants.RANGED_SPEAR_LAYER_INDEX;
+        characterCameraController.CanZoom = false;
         IsInHand = false;
+
         transform.SetParent(null);
+        EnableHitCollider(true);
         spearRangedController.enabled = true;
     }
 
     private void OnSpearLanded()
     {
         EnableHitCollider(false);
-        gameObject.layer = Constants.PICKUP_LAYER_INDEX;
         spearRangedController.enabled = false;
-        spearShaftCollider.isTrigger = true;
         spearPicker.enabled = true;
+        spearPickupCollider.enabled = true;
+        damageMultiplier = 1;
     }
 
     private void OnSpearPickedUp()
@@ -136,9 +142,10 @@ public class SpearWeapon : MonoBehaviour
         transform.localPosition = startPosition;
         transform.localRotation = startRotation;
 
+        gameObject.layer = Constants.MELEE_SPEAR_LAYER_INDEX;
         IsInHand = true;
-        spearShaftCollider.isTrigger = false;
         spearPicker.enabled = false;
+        spearPickupCollider.enabled = false;
         characterCameraController.CanZoom = true;
     }
 
@@ -151,7 +158,7 @@ public class SpearWeapon : MonoBehaviour
     private void OnDestroy()
     {
         EventHandler.UnregisterEvent<bool>(character, "OnHitActivate", EnableHitCollider);
-        EventHandler.UnregisterEvent(character, "OnThrowSpear", OnSpearThrow);
+        EventHandler.UnregisterEvent<float>(character, "OnThrowSpear", OnSpearThrow);
         EventHandler.UnregisterEvent(gameObject, "OnSpearLanded", OnSpearLanded);
         EventHandler.UnregisterEvent(gameObject, "OnSpearPickedUp", OnSpearPickedUp);
         EventHandler.UnregisterEvent("GameRestarted", OnGameRestarted);

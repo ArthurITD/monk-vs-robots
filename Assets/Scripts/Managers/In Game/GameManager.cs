@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public RespawnManager respawnManager;
 
     [SerializeField] private Transform spawnPoint;
+
     private GameObject character;
     private UltimateCharacterLocomotion ultimateCharacterLocomotion;
     private bool isTestStopProcessing = false;

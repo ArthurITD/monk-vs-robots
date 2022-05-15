@@ -24,6 +24,7 @@ public class BaseStateMachine : MonoBehaviour
     void Awake()
     {
         EventHandler.RegisterEvent(gameObject, "Death", OnDeath);
+        EventHandler.RegisterEvent<GameEndedType>("GameEnded", OnGameEnded);
         InitializeStateTransitions();
     }
 
@@ -95,9 +96,24 @@ public class BaseStateMachine : MonoBehaviour
         }
     }
 
+    private void OnGameEnded(GameEndedType gameEndedType)
+    {
+        //To Do: Change to win or lose animation state
+        switch (gameEndedType)
+        {
+            case GameEndedType.Lose:
+                ResetStateMachine();
+                break;
+            case GameEndedType.Win:
+                ResetStateMachine();
+                break;
+        }
+    }
+
     private void OnDestroy()
     {
         EventHandler.UnregisterEvent(gameObject, "Death", OnDeath);
+        EventHandler.UnregisterEvent<GameEndedType>("GameEnded", OnGameEnded);
     }
 
     public void ActivateStartState()

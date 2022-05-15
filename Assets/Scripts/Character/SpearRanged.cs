@@ -1,11 +1,14 @@
 using Opsive.Shared.Events;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using EventHandler = Opsive.Shared.Events.EventHandler;
 
 public class SpearRanged : MonoBehaviour
 {
     public float throwingForce = 40;
+    [NonSerialized] public float forceMultiplier = 1;
 
     [SerializeField] private Rigidbody spearRigidBody;
     [SerializeField] private Transform testThrowingPosition;
@@ -21,7 +24,7 @@ public class SpearRanged : MonoBehaviour
     {
         transform.position = testThrowingPosition.position;
         EnableDisableGravityProperties(true);
-        spearRigidBody.AddForce(Camera.main.transform.forward * throwingForce, ForceMode.Impulse);
+        spearRigidBody.AddForce(Camera.main.transform.forward * (throwingForce * forceMultiplier), ForceMode.Impulse);
     }
 
     private void OnDisable()

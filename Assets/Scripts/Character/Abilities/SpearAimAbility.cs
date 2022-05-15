@@ -13,12 +13,14 @@ public class SpearAimAbility : Ability
 {
     private ILookSource m_LookSource;
     private SpearWeapon spearWeapon;
+    private Ability spearThrowAbility;
 
-    [SerializeField] protected GameObject CrosshairObject;
+    [SerializeField] private GameObject CrosshairObject;
 
     public override void Awake()
     {
         spearWeapon = CharacterControllerHelper.Instance.charactersSpearWeapon;
+        spearThrowAbility = m_CharacterLocomotion.GetAbility<SpearThrowAbility>();
         base.Awake();
     }
 
@@ -62,16 +64,26 @@ public class SpearAimAbility : Ability
     protected override void AbilityStarted()
     {
         base.AbilityStarted();
-        CrosshairObject.SetActive(true);
-        EventHandler.ExecuteEvent(m_GameObject, "OnAimAbilityStart", true, true);
-        EventHandler.ExecuteEvent(m_GameObject, "OnAimAbilityAim", true);
+        ChangeAbilityState(true);
     }
 
     protected override void AbilityStopped(bool force)
     {
         base.AbilityStopped(force);
-        CrosshairObject.SetActive(false);
-        EventHandler.ExecuteEvent(m_GameObject, "OnAimAbilityStart", false, true);
-        EventHandler.ExecuteEvent(m_GameObject, "OnAimAbilityAim", false);
+        ChangeAbilityState(false);
+        if(spearThrowAbility!=null && spearThrowAbility.IsActive)
+        {
+            m_CharacterLocomotion.TryStopAbility(spearThrowAbility);
+        }
+    }
+
+    private void ChangeAbilityState(bool isActive)
+    {
+        if (CrosshairObject != null)
+        {
+            CrosshairObject.SetActive(isActive);
+        }
+        EventHandler.ExecuteEvent(m_GameObject, "OnAimAbilityStart", isActive, true);
+        EventHandler.ExecuteEvent(m_GameObject, "OnAimAbilityAim", isActive);
     }
 }
