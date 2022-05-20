@@ -690,6 +690,7 @@ GameObject:
   - component: {fileID: 3424513692636861268}
   - component: {fileID: 3424513692636861290}
   - component: {fileID: 3424513692636861269}
+  - component: {fileID: 4051748015980685227}
   m_Layer: 31
   m_Name: CapsuleCollider
   m_TagString: Player
@@ -784,6 +785,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  hitBoxColliders:
+  - {fileID: 3424513692636861268}
+--- !u!114 &4051748015980685227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3424513692636861271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9f07e77fe9df2c4d8fb02f7ee5b7395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMultipleAreaHit: 0
+  damageProcessor: {fileID: 3424513692636861269}
 --- !u!1 &3424513692852045267
 GameObject:
   m_ObjectHideFlags: 0

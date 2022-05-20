@@ -126,6 +126,7 @@ public class BaseStateMachine : MonoBehaviour
     {
         isStateMachineRunning = false;
         CurrentState.enabled = false;
+        currentTarget = null;
         CurrentState = startState;
     }
 }

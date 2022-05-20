@@ -48,6 +48,7 @@ public class WalkState : BaseState
         if (isAgentExists)
         {
             navMeshAgent.isStopped = false;
+            animator.SetTrigger(Constants.WALK_ANIMATION_TRIGGER);
         }
         IsCompleted = true;
     }

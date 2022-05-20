@@ -18,10 +18,12 @@ public class HitDetector : MonoBehaviour
     public DamageInfo damageInfo;
 
     private List<GameObject> hittedTargets = new List<GameObject>();
+    private List<DamageProcessor> damageProcessors = new List<DamageProcessor>();
 
     public void ClearHittedTargets()
     {
         hittedTargets.Clear();
+        damageProcessors.Clear();
     }
 
     private void OnTriggerEnter(Collider hitCollider)
@@ -29,7 +31,18 @@ public class HitDetector : MonoBehaviour
         if (hitTags.Contains(hitCollider.tag) && !hittedTargets.Contains(hitCollider.gameObject))
         {
             hittedTargets.Add(hitCollider.gameObject);
-            hitCollider.GetComponent<DamageProcessor>().ProcessDamage(damageInfo);
+            if (hitCollider.TryGetComponent(out HitBox hitBox))
+            {
+                if (!damageProcessors.Contains(hitBox.DamageProcessor))
+                {
+                    hitBox.DamageProcessor.ProcessDamage(damageInfo);
+                    damageProcessors.Add(hitBox.DamageProcessor);
+                }
+                else if(hitBox.IsMultipleAreaHit)
+                {
+                    hitBox.DamageProcessor.ProcessDamage(damageInfo);
+                }
+            }
         }
     }
 }

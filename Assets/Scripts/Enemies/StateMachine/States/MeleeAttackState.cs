@@ -27,21 +27,18 @@ public class MeleeAttackState : BaseState
         IsCompleted = false;
         isLookAtTarget = true;
 
-        //Play prepearing animation
-        //Test preparation duration, will be changed after implementing animations
-        yield return new WaitForSeconds(2f);
+        animator.SetTrigger(Constants.MELEE_ATTACK_ANIMATION_TRIGGER);
+        yield return new WaitForSeconds(GetCurentAnimatonLength());
         isLookAtTarget = false;
 
         meleeAttackCollider.enabled = true;
-        //Play attack animation
-        //Test attack duration, will be changed after implementing animations
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(GetCurentAnimatonLength());
 
         meleeAttackCollider.enabled = false;
         weaponHitDetector.ClearHittedTargets();
         IsCompleted = true;
 
-        //Play return to normal state animation
+        yield return new WaitForSeconds(GetCurentAnimatonLength());
         yield return new WaitForSeconds(delayBetweenAttacks);
         StartCoroutine(AttackWithIntervals());
     }

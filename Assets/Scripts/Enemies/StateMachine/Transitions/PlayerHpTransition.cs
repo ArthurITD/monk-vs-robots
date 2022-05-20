@@ -41,5 +41,6 @@ public class PlayerHpTransition : BaseTransition
     public override void InitializeTransition(BaseStateMachine stateMachine)
     {
         base.InitializeTransition(stateMachine);
+        currentHpController = CharacterControllerHelper.Instance.characterHealth;
     }
 }
