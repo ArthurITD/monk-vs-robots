@@ -2,9 +2,6 @@ using enums;
 using Opsive.UltimateCharacterController.Character;
 using Opsive.UltimateCharacterController.Traits;
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using TotemEntities;
 using UnityEngine;
 using EventHandler = Opsive.Shared.Events.EventHandler;
 

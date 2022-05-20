@@ -109,13 +109,13 @@ public class RobotsSpawner : MonoBehaviour
 
     private void OnGameRestarted()
     {
-        foreach(var robot in currentWaveRobots)
+        foreach (var robot in currentWaveRobots)
         {
             robot.ResetStateMachine();
             robot.gameObject.SetActive(false);
             OnRobotDied(robot);
-            spawnedEnemies = 0;
         }
+        spawnedEnemies = 0;
     }
 
     private void OnGameEnded(GameEndedType gameEndedType)

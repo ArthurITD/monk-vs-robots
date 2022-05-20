@@ -17,6 +17,7 @@ public class AoeProjectileAttackState : BaseState
 
     private void OnEnable()
     {
+        animator.SetTrigger(Constants.IDLE_ANIMATION_TRIGGER);
         StartCoroutine(PerformAoeAttack());
     }
 

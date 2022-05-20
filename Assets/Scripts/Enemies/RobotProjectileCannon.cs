@@ -8,6 +8,7 @@ public class RobotProjectileCannon : MonoBehaviour
 {
     [SerializeField] private float cannonForce;
     [SerializeField] private Transform shootPoint;
+    [SerializeField] private Transform projectilesPool;
 
     private List<RobotProjectile> pooledProjectiles = new List<RobotProjectile>();
 
@@ -21,7 +22,7 @@ public class RobotProjectileCannon : MonoBehaviour
 
     private void InitializedPooledProjectiles()
     {
-        pooledProjectiles = gameObject.GetComponentsInChildren<RobotProjectile>(true).ToList();
+        pooledProjectiles = projectilesPool.GetComponentsInChildren<RobotProjectile>(true).ToList();
         foreach(var projectile in pooledProjectiles)
         {
             projectile.force = cannonForce;
@@ -32,7 +33,7 @@ public class RobotProjectileCannon : MonoBehaviour
     private void OnProjectileDestroyed(RobotProjectile destroyedProjectile)
     {
         destroyedProjectile.gameObject.SetActive(false);
-        destroyedProjectile.transform.SetParent(transform);
+        destroyedProjectile.transform.SetParent(projectilesPool);
         destroyedProjectile.transform.localPosition = Vector3.zero;
         pooledProjectiles.Add(destroyedProjectile);
     }

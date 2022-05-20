@@ -4,41 +4,43 @@ using UnityEngine;
 
 public class RangedAttackState : BaseState
 {
-    [SerializeField] private List<Transform> projectileCannons;
-    [SerializeField] private List<RobotProjectileCannon> rangedCannons;
+    [SerializeField] private RobotAim projectileCannon;
+    [SerializeField] private RobotAim projectileTurret;
+    [SerializeField] private RobotProjectileCannon rangedCannon;
     [SerializeField] private float reloadTime;
 
-    //Needed to be reworked in future to grab actual player height
-    private float playerHeight = 1.8f;
+    private Coroutine cannonAimCoroutine;
+    private Coroutine turretAimCoroutine;
 
-    private void Update()
+    protected virtual void OnEnable()
     {
-        for (int i = 0; i < projectileCannons.Count; i++)
+        IsCompleted = true;
+        cannonAimCoroutine = StartCoroutine(projectileCannon.Aim(stateMachine.currentTarget));
+        turretAimCoroutine = StartCoroutine(projectileTurret.Aim(stateMachine.currentTarget));
+    }
+
+    protected virtual void Update()
+    {
+        if(projectileCannon.IsAimed && rangedCannon.IsReloaded)
         {
-            if (AimCannon(projectileCannons[i]) && rangedCannons[i].IsReloaded)
-            {
-                IsCompleted = false;
-                rangedCannons[i].Shoot(reloadTime);
-                IsCompleted = true;
-            }
+            StartCoroutine(RangedAttack());
         }
     }
 
-    private bool AimCannon(Transform cannonTransform)
+    protected override void OnDisable()
     {
-        var modiffiedTargetPosition = new Vector3(
-            stateMachine.currentTarget.position.x,
-            stateMachine.currentTarget.position.y + playerHeight,
-            stateMachine.currentTarget.position.z);
-        var targetDirection = (modiffiedTargetPosition - cannonTransform.position).normalized;
-        var targetRotation = Quaternion.LookRotation(targetDirection);
+        base.OnDisable();
+        StopCoroutine(cannonAimCoroutine);
+        StopCoroutine(turretAimCoroutine);
+    }
 
-        if (Quaternion.Angle(cannonTransform.rotation, targetRotation) > 1)
-        {
-            cannonTransform.rotation = Quaternion.Slerp(cannonTransform.rotation, targetRotation, Time.deltaTime * 2f);
-            return false;
-        }
+    private IEnumerator RangedAttack()
+    {
+        IsCompleted = false;
+        animator.SetTrigger(Constants.SHOOT_ANIMATION_TRIGGER);
+        rangedCannon.Shoot(reloadTime);
+        yield return new WaitForSeconds(GetCurentAnimatonLength());
 
-        return true;
+        IsCompleted = true;
     }
 }

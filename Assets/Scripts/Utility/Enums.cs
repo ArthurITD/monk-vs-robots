@@ -43,3 +43,16 @@ public enum GameEndedType
     Win,
     Lose
 }
+
+public enum AxisType
+{ 
+    X,
+    Y,
+    Z
+}
+
+public enum TargetType
+{
+    Shrine,
+    Player
+}

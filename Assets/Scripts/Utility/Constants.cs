@@ -24,4 +24,10 @@ public static class Constants
     public const float DODGE_CHANCE = 15;
     public const int NOT_DODGED_ATTACKS_LIMIT = 4;
     public const int CHARACTER_SPEED_VALUE = 2;
+
+    public const string WALK_ANIMATION_TRIGGER = "Walk";
+    public const string IDLE_ANIMATION_TRIGGER = "Idle";
+    public const string MELEE_ATTACK_ANIMATION_TRIGGER = "MeleeAttack";
+    public const string DEATH_ANIMATION_TRIGGER = "Death";
+    public const string SHOOT_ANIMATION_TRIGGER = "Shoot";
 }

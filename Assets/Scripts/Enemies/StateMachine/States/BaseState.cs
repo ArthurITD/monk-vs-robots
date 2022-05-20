@@ -37,4 +37,10 @@ public class BaseState : MonoBehaviour
         StopTimerTransitions();
         StopAllCoroutines();
     }
+
+    protected float GetCurentAnimatonLength()
+    {
+        var currentStateInfo = animator.GetCurrentAnimatorStateInfo(0);
+        return currentStateInfo.length;
+    }
 }

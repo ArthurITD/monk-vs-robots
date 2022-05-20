@@ -20,7 +20,14 @@ public class SpearThrowAbility : Ability
     public override bool IsConcurrent { get { return true; } }
 
     private Coroutine spearChargeCoroutine;
+    protected Ability spearAimAbility;
     private float chargeMultiplier = CHARGE_MULTIPLIER_START_VALUE;
+
+    public override void Awake()
+    {
+        base.Awake();
+        spearAimAbility = m_CharacterLocomotion.GetAbility<SpearAimAbility>();
+    }
 
     public override bool CanStartAbility()
     {
@@ -44,6 +51,7 @@ public class SpearThrowAbility : Ability
         if (m_CharacterLocomotion.IsAbilityTypeActive<SpearAimAbility>())
         {
             EventHandler.ExecuteEvent(CharacterControllerHelper.Instance.Character, "OnThrowSpear", chargeMultiplier);
+            m_CharacterLocomotion.TryStopAbility(spearAimAbility);
         }
         m_CharacterLocomotion.StopCoroutine(spearChargeCoroutine);
         chargeMultiplier = CHARGE_MULTIPLIER_START_VALUE;

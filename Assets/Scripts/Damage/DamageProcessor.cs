@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using Random = UnityEngine.Random;
+using EventHandler = Opsive.Shared.Events.EventHandler;
 
 [Serializable]
 public class OnDamage : UnityEvent<float> { }
@@ -13,26 +14,16 @@ public class DamageProcessor : MonoBehaviour
     public bool isInvincibleAfterHit = false;
     public float hitDelay = 0.5f;
     [NonSerialized] public float dodgeChance = 0;
-    [SerializeField] public OnDamage OnDamage;
 
+    [SerializeField] private OnDamage OnDamage;
+    [SerializeField] private List<Collider> hitBoxColliders;
     private bool isInvincible = false;
     private int notDodgedHits = 0;
 
-    public void ProcessDamage(DamageInfo damageInfo)
+    private void Awake()
     {
-        if (!isInvincible)
-        {
-            if (dodgeChance > 0 && IsHitDodged())
-            {
-                return;
-            }
-            if (isInvincibleAfterHit)
-            {
-                StartCoroutine(AfterHitInvincibility());
-            }
-            OnDamage.Invoke(damageInfo.damageAmount);
-            //Apply Debuf
-        }
+        EventHandler.RegisterEvent("GameRestarted", OnGameRestarted);
+        EventHandler.RegisterEvent<GameEndedType>("GameEnded", OnGameEnded);
     }
 
     private bool IsHitDodged()
@@ -57,5 +48,40 @@ public class DamageProcessor : MonoBehaviour
         isInvincible = true;
         yield return new WaitForSeconds(hitDelay);
         isInvincible = false;
+    }
+
+    private void OnGameEnded(GameEndedType gameEndedType)
+    {
+        EnableDiasbleHitBoxes(false);
+    }
+
+    private void OnGameRestarted()
+    {
+        EnableDiasbleHitBoxes(true);
+    }
+
+    private void EnableDiasbleHitBoxes(bool isEnable)
+    {
+        foreach(var hitBox in hitBoxColliders)
+        {
+            hitBox.enabled = isEnable;
+        }
+    }
+
+    public void ProcessDamage(DamageInfo damageInfo)
+    {
+        if (!isInvincible)
+        {
+            if (dodgeChance > 0 && IsHitDodged())
+            {
+                return;
+            }
+            if (isInvincibleAfterHit)
+            {
+                StartCoroutine(AfterHitInvincibility());
+            }
+            OnDamage.Invoke(damageInfo.damageAmount);
+            //Apply Debuf
+        }
     }
 }
