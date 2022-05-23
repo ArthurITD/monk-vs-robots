@@ -151,6 +151,7 @@ MonoBehaviour:
   - Player
   - Ground
   - Shrine
+  - Environment
   projectileRigidbody: {fileID: 122479928411563618}
   projectileCollider: {fileID: 5966058666553924294}
   projectileHitDetector: {fileID: 5570281299466821788}

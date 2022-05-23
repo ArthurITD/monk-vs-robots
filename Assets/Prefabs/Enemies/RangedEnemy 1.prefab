@@ -219,8 +219,6 @@ MonoBehaviour:
   rangedCannon: {fileID: 342375798616669427}
   reloadTime: 2.5
   walkTarget: 0
-  turretBone: {fileID: 6847143554663615043}
-  walkAnim: {fileID: 0}
 --- !u!114 &6872128756729270564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,7 +240,7 @@ NavMeshAgent:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547762619430651726}
   m_Enabled: 1
-  m_AgentTypeID: -1372625422
+  m_AgentTypeID: 1479372276
   m_Radius: 1
   m_Speed: 2
   m_Acceleration: 8
@@ -407,6 +405,7 @@ MonoBehaviour:
   - Player
   - Ground
   - Shrine
+  - Environment
   projectileRigidbody: {fileID: 6938144367753386633}
   projectileCollider: {fileID: 3688920803485754925}
   projectileHitDetector: {fileID: 3222187021510368375}
@@ -445,8 +444,8 @@ RectTransform:
   m_Father: {fileID: 423925559604360360}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1453,6 +1452,7 @@ MonoBehaviour:
   - Player
   - Ground
   - Shrine
+  - Environment
   projectileRigidbody: {fileID: 5390709118747973506}
   projectileCollider: {fileID: 1853008072217127718}
   projectileHitDetector: {fileID: 446167443409211772}
@@ -1677,6 +1677,7 @@ MonoBehaviour:
   - Player
   - Ground
   - Shrine
+  - Environment
   projectileRigidbody: {fileID: 6505098736998758797}
   projectileCollider: {fileID: 666058520594433321}
   projectileHitDetector: {fileID: 1637198485567160179}
@@ -1833,6 +1834,7 @@ MonoBehaviour:
   - Player
   - Ground
   - Shrine
+  - Environment
   projectileRigidbody: {fileID: 6705086237951397975}
   projectileCollider: {fileID: 1041967653552680179}
   projectileHitDetector: {fileID: 1293658874076370601}
@@ -2090,6 +2092,7 @@ MonoBehaviour:
   - Player
   - Ground
   - Shrine
+  - Environment
   projectileRigidbody: {fileID: 5826179235125253582}
   projectileCollider: {fileID: 261823691596605802}
   projectileHitDetector: {fileID: 2027746460284179248}
@@ -2467,6 +2470,7 @@ MonoBehaviour:
   - Player
   - Ground
   - Shrine
+  - Environment
   projectileRigidbody: {fileID: 3306682955690349938}
   projectileCollider: {fileID: 9122923708644813270}
   projectileHitDetector: {fileID: 6997763879546491788}
@@ -2623,6 +2627,7 @@ MonoBehaviour:
   - Player
   - Ground
   - Shrine
+  - Environment
   projectileRigidbody: {fileID: 2875310385597332570}
   projectileCollider: {fileID: 8403637637570969854}
   projectileHitDetector: {fileID: 7717366575399680676}
@@ -2662,7 +2667,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3120,6 +3125,7 @@ MonoBehaviour:
   - Player
   - Ground
   - Shrine
+  - Environment
   projectileRigidbody: {fileID: 377375162909174111}
   projectileCollider: {fileID: 6216133869708629499}
   projectileHitDetector: {fileID: 5314822857424842657}
@@ -3276,6 +3282,7 @@ MonoBehaviour:
   - Player
   - Ground
   - Shrine
+  - Environment
   projectileRigidbody: {fileID: 513221487530797721}
   projectileCollider: {fileID: 6082045733003761213}
   projectileHitDetector: {fileID: 5467910587909434471}
@@ -3432,6 +3439,7 @@ MonoBehaviour:
   - Player
   - Ground
   - Shrine
+  - Environment
   projectileRigidbody: {fileID: 2262421360717496327}
   projectileCollider: {fileID: 5484588687772810403}
   projectileHitDetector: {fileID: 6024412987320436473}
@@ -3588,6 +3596,7 @@ MonoBehaviour:
   - Player
   - Ground
   - Shrine
+  - Environment
   projectileRigidbody: {fileID: 2203461471386544289}
   projectileCollider: {fileID: 5615096959967777797}
   projectileHitDetector: {fileID: 5938835055369498207}

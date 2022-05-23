@@ -10,6 +10,7 @@ TagManager:
   - Enemy
   - Shrine
   - Ground
+  - Environment
   layers:
   - Default
   - TransparentFX
@@ -27,7 +28,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Environment
   - Shrine
   - EnemyHitBox
   - InvisibleWall
