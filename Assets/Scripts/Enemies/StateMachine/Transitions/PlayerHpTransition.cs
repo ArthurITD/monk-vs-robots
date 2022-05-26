@@ -17,14 +17,16 @@ public class PlayerHpTransition : BaseTransition
             case HpComparerTransitionType.Above:
                 if (currentHpController.HealthValue > requiredHp)
                 {
-                    stateMachine.currentTarget = CharacterControllerHelper.Instance.Character.transform;
+                    stateMachine.currentTargetTransform = CharacterControllerHelper.Instance.Character.transform;
+                    stateMachine.currentTargetCollider = CharacterControllerHelper.Instance.playerCollider;
                     return (true, stateToTransit);
                 }
                 break;
             case HpComparerTransitionType.Equals:
                 if (currentHpController.HealthValue == requiredHp)
                 {
-                    stateMachine.currentTarget = ShrineController.Instance.transform;
+                    stateMachine.currentTargetTransform = ShrineController.Instance.transform;
+                    stateMachine.currentTargetCollider = ShrineController.Instance.shrineCollider;
                     return (true, stateToTransit);
                 }
                 break;

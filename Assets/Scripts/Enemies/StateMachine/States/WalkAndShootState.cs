@@ -24,6 +24,9 @@ public class WalkAndShootState : RangedAttackState
             case TargetType.Shrine:
                 walkTargetCollider = ShrineController.Instance.shrineCollider;
                 break;
+            case TargetType.CurrentTarget:
+                walkTargetCollider = stateMachine.currentTargetCollider;
+                break;
         }
 
         isAgentExists = TryGetComponent<NavMeshAgent>(out navMeshAgent);

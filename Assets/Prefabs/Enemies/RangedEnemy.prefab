@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 6872128756729270564}
   - component: {fileID: 1284697851739126615}
   m_Layer: 26
-  m_Name: RangedEnemy 1
+  m_Name: RangedEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,7 +43,6 @@ Transform:
   - {fileID: 5851257129588460783}
   - {fileID: 1682860117245988167}
   - {fileID: 4819712946685473478}
-  - {fileID: 2494097078427949477}
   - {fileID: 3383939410420002784}
   - {fileID: 2257644239023611050}
   m_Father: {fileID: 0}
@@ -180,6 +179,7 @@ MonoBehaviour:
   stateTransitions:
   - {fileID: 1695288083643095506}
   - {fileID: 1695288083643095509}
+  targetType: 0
 --- !u!114 &8893790596735076547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,8 +194,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stateTransitions:
   - {fileID: 1695288083887501551}
-  projectileCannon: {fileID: 342375798616669426}
-  projectileTurret: {fileID: 6706087406336478207}
+  mainProjectileAimCannon: {fileID: 342375798616669426}
+  projectileAimParts:
+  - {fileID: 6706087406336478207}
+  - {fileID: 342375798616669426}
   rangedCannon: {fileID: 342375798616669427}
   reloadTime: 2.5
 --- !u!114 &7813303390073095671
@@ -214,8 +216,10 @@ MonoBehaviour:
   - {fileID: 1695288084770343013}
   - {fileID: 1695288084770343012}
   - {fileID: 1695288084770343015}
-  projectileCannon: {fileID: 342375798616669426}
-  projectileTurret: {fileID: 6706087406336478207}
+  mainProjectileAimCannon: {fileID: 342375798616669426}
+  projectileAimParts:
+  - {fileID: 6706087406336478207}
+  - {fileID: 342375798616669426}
   rangedCannon: {fileID: 342375798616669427}
   reloadTime: 2.5
   walkTarget: 0
@@ -522,71 +526,6 @@ Transform:
   m_Father: {fileID: 8998681092846823074}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &821131054485597843
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2494097078427949477}
-  - component: {fileID: 2416756414315862238}
-  - component: {fileID: 2566906063209838652}
-  m_Layer: 25
-  m_Name: FrontHitArea
-  m_TagString: EnemyMeleeWeapon
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2494097078427949477
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 821131054485597843}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.888, z: 0.997}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8998681092846823074}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2416756414315862238
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 821131054485597843}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2566906063209838652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 821131054485597843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54e6a72a01c45e442a97f8de668789e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitTags:
-  - Player
-  - Shrine
-  damageInfo:
-    damageAmount: 20
-    damageDealerName: MeleeRobot
-    baseDamage: 0
 --- !u!1 &854157331132540155
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,7 +591,7 @@ RectTransform:
   m_Children:
   - {fileID: 2667942660982128776}
   m_Father: {fileID: 8998681092846823074}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -919,7 +858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e408a667ec3ba4e8d39ec527711c2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateType: RangedAttackState
+  stateToTransit: {fileID: 8893790596735076547}
   triggerDistance: 5
   distanceType: 0
 --- !u!114 &1695288083643095509
@@ -934,7 +873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a38a24a7756d709479525acab0e0e067, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateType: WalkAndShootState
+  stateToTransit: {fileID: 7813303390073095671}
   triggerDistance: 20
   distanceType: 0
 --- !u!1 &1695288083887501537
@@ -981,7 +920,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e408a667ec3ba4e8d39ec527711c2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateType: WalkState
+  stateToTransit: {fileID: 8020201201901260513}
   triggerDistance: 5
   distanceType: 1
 --- !u!1 &1695288084755670988
@@ -1072,7 +1011,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e408a667ec3ba4e8d39ec527711c2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateType: RangedAttackState
+  stateToTransit: {fileID: 8893790596735076547}
   triggerDistance: 5
   distanceType: 0
 --- !u!114 &1695288084770343012
@@ -1087,7 +1026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb90a30d50c84e84dbba6b17755e60af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateType: WalkState
+  stateToTransit: {fileID: 8020201201901260513}
   requiredHp: 0
   hpComparerType: 2
 --- !u!114 &1695288084770343015
@@ -1102,7 +1041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a38a24a7756d709479525acab0e0e067, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateType: WalkState
+  stateToTransit: {fileID: 8020201201901260513}
   triggerDistance: 25
   distanceType: 1
 --- !u!1 &1695288084900076282
@@ -1272,7 +1211,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8998681092846823074}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &8775925994793264888
 BoxCollider:
@@ -2301,7 +2240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e408a667ec3ba4e8d39ec527711c2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateType: WalkState
+  stateToTransit: {fileID: 8020201201901260513}
   triggerDistance: 5
   distanceType: 1
 --- !u!114 &5062862152867029255
@@ -2316,7 +2255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a38a24a7756d709479525acab0e0e067, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateType: WalkAndShootState
+  stateToTransit: {fileID: 7813303390073095671}
   triggerDistance: 20
   distanceType: 0
 --- !u!1 &4917663396065363419

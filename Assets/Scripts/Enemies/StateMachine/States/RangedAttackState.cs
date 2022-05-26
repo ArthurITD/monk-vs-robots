@@ -4,24 +4,25 @@ using UnityEngine;
 
 public class RangedAttackState : BaseState
 {
-    [SerializeField] private RobotAim projectileCannon;
-    [SerializeField] private RobotAim projectileTurret;
+    [SerializeField] private RobotAim mainProjectileAimCannon;
+    [SerializeField] private List<RobotAim> projectileAimParts;
     [SerializeField] private RobotProjectileCannon rangedCannon;
     [SerializeField] private float reloadTime;
 
-    private Coroutine cannonAimCoroutine;
-    private Coroutine turretAimCoroutine;
+    List<Coroutine> aimCoroutines = new List<Coroutine>();
 
     protected virtual void OnEnable()
     {
         IsCompleted = true;
-        cannonAimCoroutine = StartCoroutine(projectileCannon.Aim(stateMachine.currentTarget));
-        turretAimCoroutine = StartCoroutine(projectileTurret.Aim(stateMachine.currentTarget));
+        foreach(var aimPart in projectileAimParts)
+        {
+            aimCoroutines.Add(StartCoroutine(aimPart.Aim(stateMachine.currentTargetTransform)));
+        }
     }
 
     protected virtual void Update()
     {
-        if(projectileCannon.IsAimed && rangedCannon.IsReloaded)
+        if(mainProjectileAimCannon.IsAimed && rangedCannon.IsReloaded)
         {
             StartCoroutine(RangedAttack());
         }
@@ -30,8 +31,11 @@ public class RangedAttackState : BaseState
     protected override void OnDisable()
     {
         base.OnDisable();
-        StopCoroutine(cannonAimCoroutine);
-        StopCoroutine(turretAimCoroutine);
+        foreach (var aimCoroutine in aimCoroutines)
+        {
+            StopCoroutine(aimCoroutine);
+        }
+        aimCoroutines.Clear();
     }
 
     private IEnumerator RangedAttack()

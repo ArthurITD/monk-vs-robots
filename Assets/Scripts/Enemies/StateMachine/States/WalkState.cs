@@ -6,12 +6,16 @@ using UnityEngine.AI;
 
 public class WalkState : BaseState
 {
+    [SerializeField] private TargetType targetType;
+
+    private Collider targetCollider;
     private NavMeshAgent navMeshAgent;
     private bool isAgentExists = false;
 
     protected override void Awake()
     {
         base.Awake();
+        targetCollider = DefineTargetCollider();
         isAgentExists = TryGetComponent<NavMeshAgent>(out navMeshAgent);
         if(!isAgentExists)
         {
@@ -39,8 +43,23 @@ public class WalkState : BaseState
 
     private void SetNewDestination()
     {
-        var newDestination = ShrineController.Instance.shrineCollider.ClosestPoint(transform.position);
+        var newDestination = targetCollider.ClosestPoint(transform.position);
         navMeshAgent.SetDestination(newDestination);
+    }
+
+    private Collider DefineTargetCollider()
+    {
+        switch (targetType)
+        {
+            case TargetType.Player:
+                return CharacterControllerHelper.Instance.playerCollider;
+            case TargetType.Shrine:
+                return ShrineController.Instance.shrineCollider;
+            case TargetType.CurrentTarget:
+                return stateMachine.currentTargetCollider;
+            default:
+                return stateMachine.currentTargetCollider;
+        }
     }
 
     private void OnEnable()

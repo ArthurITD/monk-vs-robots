@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: b9cddf5ccb5a7094b9dfa2e219a165e8
+guid: 5f149a295af0ddb49abd6d1111bff7d3
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable:
   - first:
       74: -5784323868014877171
-    second: walk_boss
+    second: Walk
   - first:
       74: -1860949737984793163
     second: Fihish_melee_attack_boss.001
@@ -17,19 +17,16 @@ ModelImporter:
     second: melee_attack_boss.001
   - first:
       74: 7772491604685366404
-    second: Idle_boss
+    second: Idle
   - first:
       74: 8337267631149579414
-    second: shoot_boss
+    second: Shoot
   - first:
       74: -750373844171864848
-    second: victory_boss
+    second: Victory
   - first:
       74: -9213279818156195620
-    second: Dead_boss
-  - first:
-      74: 4370947546640617558
-    second: Rotate_boss
+    second: Death
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -60,7 +57,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: walk_boss
+      name: Walk
       takeName: walk_boss
       internalID: 0
       firstFrame: 0
@@ -122,7 +119,7 @@ ModelImporter:
       takeName: Start_melee_attack_boss.001
       internalID: 0
       firstFrame: 0
-      lastFrame: 50
+      lastFrame: 65
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -151,7 +148,7 @@ ModelImporter:
       takeName: melee_attack_boss.001
       internalID: 0
       firstFrame: 0
-      lastFrame: 25
+      lastFrame: 10
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -176,7 +173,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Idle_boss
+      name: Idle
       takeName: Idle_boss
       internalID: 0
       firstFrame: 0
@@ -205,7 +202,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: shoot_boss
+      name: Shoot
       takeName: shoot_boss
       internalID: 0
       firstFrame: 0
@@ -234,7 +231,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: victory_boss
+      name: Victory
       takeName: victory_boss
       internalID: 0
       firstFrame: 0
@@ -263,7 +260,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Dead_boss
+      name: Death
       takeName: Dead_boss
       internalID: 0
       firstFrame: 0
@@ -275,35 +272,6 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Rotate_boss
-      takeName: Rotate_boss
-      internalID: 0
-      firstFrame: 0
-      lastFrame: 40
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
