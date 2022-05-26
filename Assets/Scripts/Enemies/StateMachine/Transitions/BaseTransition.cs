@@ -7,10 +7,7 @@ using UnityEngine;
 public abstract class BaseTransition : MonoBehaviour
 {
     protected BaseStateMachine stateMachine;
-    protected BaseState stateToTransit;
-
-    [Tooltip("State type class must derive from BaseState")]
-    [SerializeField] protected string stateType;
+    [SerializeField] protected BaseState stateToTransit;
 
     public bool IsInitializedSuccessfully { get; protected set; }
 
@@ -18,21 +15,22 @@ public abstract class BaseTransition : MonoBehaviour
 
     public virtual void InitializeTransition(BaseStateMachine stateMachine)
     {
-        Type type = Type.GetType(stateType);
-        if (type == null)
-        {
-            IsInitializedSuccessfully = false;
-            return;
-        }
+        //Type type = Type.GetType(stateType);
+        //if (type == null)
+        //{
+        //    IsInitializedSuccessfully = false;
+        //    return;
+        //}
 
-        IsInitializedSuccessfully = stateMachine.TryGetComponent(type, out Component stateComponent);
-        if (!(stateComponent is BaseState))
-        {
-            IsInitializedSuccessfully = false;
-            return;
-        }
+        //IsInitializedSuccessfully = stateMachine.TryGetComponent(type, out Component stateComponent);
+        //if (!(stateComponent is BaseState))
+        //{
+        //    IsInitializedSuccessfully = false;
+        //    return;
+        //}
 
-        stateToTransit = stateComponent as BaseState;
+        //stateToTransit = stateComponent as BaseState;
         this.stateMachine = stateMachine;
+        IsInitializedSuccessfully = true;
     }
 }

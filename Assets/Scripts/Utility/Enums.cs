@@ -54,5 +54,6 @@ public enum AxisType
 public enum TargetType
 {
     Shrine,
-    Player
+    Player,
+    CurrentTarget
 }

@@ -60,7 +60,7 @@ public class RobotAim : MonoBehaviour
 
             if(isRaycasting)
             {
-                if (Physics.Raycast(transform.position, targetDirection, out RaycastHit hit, shootDistance, hitTargetsMask))
+                if (Physics.Raycast(transform.position, transform.forward, shootDistance, hitTargetsMask))
                 {
                     IsAimed = true;
                 }

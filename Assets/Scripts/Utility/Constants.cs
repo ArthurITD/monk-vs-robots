@@ -30,4 +30,5 @@ public static class Constants
     public const string MELEE_ATTACK_ANIMATION_TRIGGER = "MeleeAttack";
     public const string DEATH_ANIMATION_TRIGGER = "Death";
     public const string SHOOT_ANIMATION_TRIGGER = "Shoot";
+    public const string ROTATE_ANIMATION_TRIGGER = "Rotate";
 }

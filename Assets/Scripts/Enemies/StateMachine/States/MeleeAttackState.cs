@@ -8,28 +8,29 @@ public class MeleeAttackState : BaseState
     [SerializeField] private HitDetector weaponHitDetector;
     [Min(0.1f)]
     [SerializeField] private float delayBetweenAttacks;
+    [Min(0)]
+    [Tooltip("Angle between robot and his target to perform the attack. (Without Y axis)")]
+    [SerializeField] private float avaliableAttackAngle;
+    [SerializeField] private bool isRotateAnimationApplied;
 
-    private bool isLookAtTarget = false;
+    private bool isAttacking = false;
+    private bool isOnCooldown = false;
+    private bool isRotating = false;
 
     private void OnEnable()
     {
-        if(meleeAttackCollider == null)
+        IsCompleted = true;
+        if (meleeAttackCollider == null)
         {
             Debug.LogError($"MeleeAttackCollider wasn't set on {name} enemy");
-            IsCompleted = true;
-            return;
+            isAttacking = true;
         }
-        StartCoroutine(AttackWithIntervals());
     }
 
-    private IEnumerator AttackWithIntervals()
+    private IEnumerator MeleeAttack()
     {
-        IsCompleted = false;
-        isLookAtTarget = true;
-
         animator.SetTrigger(Constants.MELEE_ATTACK_ANIMATION_TRIGGER);
         yield return new WaitForSeconds(GetCurentAnimatonLength());
-        isLookAtTarget = false;
 
         meleeAttackCollider.enabled = true;
         yield return new WaitForSeconds(GetCurentAnimatonLength());
@@ -39,31 +40,63 @@ public class MeleeAttackState : BaseState
         IsCompleted = true;
 
         yield return new WaitForSeconds(GetCurentAnimatonLength());
+
+        isAttacking = false;
+        StartCoroutine(AttackCooldown());
         yield return new WaitForSeconds(delayBetweenAttacks);
-        StartCoroutine(AttackWithIntervals());
     }
 
-    protected void Update()
+    private void Update()
     {
-        if (isLookAtTarget)
+        if (!isAttacking)
         {
-            var modiffiedTargetPosition = new Vector3(
-                stateMachine.currentTarget.position.x, 
-                transform.position.y,
-                stateMachine.currentTarget.position.z);
+            var (isTargetInRange, targetRotation) = CalculateTargetRotation();
 
-            var targetDirection = (modiffiedTargetPosition - transform.position).normalized;
-            var targetRotation = Quaternion.LookRotation(targetDirection);
-            if (Quaternion.Angle(transform.rotation, targetRotation) > 5)
+            if (isTargetInRange && !isOnCooldown)
             {
+                IsCompleted = false;
+                isAttacking = true;
+                isRotating = false;
+                StartCoroutine(MeleeAttack());
+            }
+            else if (!isTargetInRange)
+            {
+                if (isRotateAnimationApplied && !isRotating)
+                {
+                    animator.SetTrigger(Constants.ROTATE_ANIMATION_TRIGGER);
+                    isRotating = transform;
+                }
                 transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 1f);
             }
         }
     }
 
+    private (bool, Quaternion) CalculateTargetRotation()
+    {
+        var modiffiedTargetPosition = new Vector3(
+            stateMachine.currentTargetTransform.position.x,
+            transform.position.y,
+            stateMachine.currentTargetTransform.position.z);
+
+        var targetDirection = (modiffiedTargetPosition - transform.position).normalized;
+        var targetRotation = Quaternion.LookRotation(targetDirection);
+        bool isTargetInRange = Quaternion.Angle(transform.rotation, targetRotation) < avaliableAttackAngle ? true : false;
+
+        return (isTargetInRange, targetRotation);
+    }
+
+    private IEnumerator AttackCooldown()
+    {
+        isOnCooldown = true;
+        yield return new WaitForSeconds(delayBetweenAttacks);
+        isOnCooldown = false;
+    }
+
     protected override void OnDisable()
     {
-        StopCoroutine(AttackWithIntervals());
         base.OnDisable();
+        isAttacking = false;
+        isOnCooldown = false;
+        isRotating = false;
     }
 }

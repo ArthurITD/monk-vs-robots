@@ -24,14 +24,16 @@ public class PlayerDistanceTransition : BaseTransition
             case DistanceTransitionType.InRange:
                 if (distanceToTarget <= triggerDistance)
                 {
-                    stateMachine.currentTarget = targetTransform;
+                    stateMachine.currentTargetTransform = targetTransform;
+                    stateMachine.currentTargetCollider = targetCollider;
                     return (true, stateToTransit);
                 }
                 break;
             case DistanceTransitionType.OutOfRange:
                 if (distanceToTarget >= triggerDistance)
                 {
-                    stateMachine.currentTarget = targetTransform;
+                    stateMachine.currentTargetTransform = targetTransform;
+                    stateMachine.currentTargetCollider = targetCollider;
                     return (true, stateToTransit);
                 }
                 break;

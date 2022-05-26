@@ -1565,7 +1565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e408a667ec3ba4e8d39ec527711c2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateType: WalkState
+  stateToTransit: {fileID: 2400017675805611879}
   triggerDistance: 2
   distanceType: 1
 --- !u!1 &6762621552956720276
@@ -1965,7 +1965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5e408a667ec3ba4e8d39ec527711c2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateType: ExplodeState
+  stateToTransit: {fileID: 6047365219882899975}
   triggerDistance: 1.5
   distanceType: 0
 --- !u!1 &7348017908752377527
@@ -2308,6 +2308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stateTransitions:
   - {fileID: 2926380261909060267}
+  targetType: 0
 --- !u!114 &6047365219882899975
 MonoBehaviour:
   m_ObjectHideFlags: 0

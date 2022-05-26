@@ -10,7 +10,8 @@ public class BaseStateMachine : MonoBehaviour
     public EnemyHpController hpController;
     public Collider mainCollider;
 
-    [NonSerialized] public Transform currentTarget;
+    [NonSerialized] public Transform currentTargetTransform;
+    [NonSerialized] public Collider currentTargetCollider;
     [NonSerialized] public bool isStateMachineRunning = false;
     [NonSerialized] public RobotsSpawner spawnerRoot;
 
@@ -126,7 +127,8 @@ public class BaseStateMachine : MonoBehaviour
     {
         isStateMachineRunning = false;
         CurrentState.enabled = false;
-        currentTarget = null;
+        currentTargetTransform = null;
+        currentTargetCollider = null;
         CurrentState = startState;
     }
 }
