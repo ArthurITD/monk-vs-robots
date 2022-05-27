@@ -660,9 +660,10 @@ MonoBehaviour:
     - {fileID: 3424513691825115057}
   spearShaftMaterial: {fileID: 2100000, guid: 8724a079df7c3c94594994772cf0cafb, type: 2}
   spearPicker: {fileID: 2171356379467737384}
-  spearPickupCollider: {fileID: 8294772287937570435}
+  spearPickupCollider: {fileID: 8364450534189647021}
   spearRangedController: {fileID: 3424513692552184580}
   characterCameraController: {fileID: 0}
+  pickupDelay: 0.5
 --- !u!114 &3424513692552184580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5279,8 +5280,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6905490653100552040}
-  - component: {fileID: 8294772287937570435}
   - component: {fileID: 2171356379467737384}
+  - component: {fileID: 8364450534189647021}
   m_Layer: 20
   m_Name: PickupTrigger
   m_TagString: Untagged
@@ -5303,19 +5304,6 @@ Transform:
   m_Father: {fileID: 3424513692552184582}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &8294772287937570435
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5329930686763710618}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 10, y: 10, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2171356379467737384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5333,3 +5321,17 @@ MonoBehaviour:
   avaliableTriggerTags:
   - Player
   spearWeapon: {fileID: 3424513692552184581}
+--- !u!136 &8364450534189647021
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5329930686763710618}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  m_Radius: 15
+  m_Height: 1.2
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
