@@ -16,6 +16,8 @@ public class SpearWeapon : MonoBehaviour
     [SerializeField] private Collider spearPickupCollider;
     [SerializeField] private SpearRanged spearRangedController;
     [SerializeField] private CameraController characterCameraController;
+    [Min(0)]
+    [SerializeField] private float pickupDelay;
 
     private TipMaterialEnum tipMaterial;
     private ElementEnum element;
@@ -131,9 +133,8 @@ public class SpearWeapon : MonoBehaviour
     {
         EnableHitCollider(false);
         spearRangedController.enabled = false;
-        spearPicker.enabled = true;
-        spearPickupCollider.enabled = true;
         damageMultiplier = 1;
+        StartCoroutine(DelayedPickupActivation());
     }
 
     private void OnSpearPickedUp()
@@ -153,6 +154,13 @@ public class SpearWeapon : MonoBehaviour
     {
         EnableHitCollider(false);
         spearRangedController.enabled = false;
+    }
+
+    private IEnumerator DelayedPickupActivation()
+    {
+        yield return new WaitForSeconds(pickupDelay);
+        spearPicker.enabled = true;
+        spearPickupCollider.enabled = true;
     }
 
     private void OnDestroy()
