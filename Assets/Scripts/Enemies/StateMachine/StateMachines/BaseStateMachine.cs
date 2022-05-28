@@ -19,11 +19,13 @@ public class BaseStateMachine : MonoBehaviour
     [SerializeField] private BaseState startState;
 
     private List<BaseTransition> currentStateTransitions;
+    private Animator robotAnimator;
 
     public BaseState CurrentState { get; private set; }
 
     void Awake()
     {
+        TryGetComponent(out robotAnimator);
         EventHandler.RegisterEvent(gameObject, "Death", OnDeath);
         EventHandler.RegisterEvent<GameEndedType>("GameEnded", OnGameEnded);
         InitializeStateTransitions();
@@ -99,15 +101,10 @@ public class BaseStateMachine : MonoBehaviour
 
     private void OnGameEnded(GameEndedType gameEndedType)
     {
-        //To Do: Change to win or lose animation state
-        switch (gameEndedType)
+        ResetStateMachine();
+        if (gameEndedType == GameEndedType.Lose && robotAnimator != null)
         {
-            case GameEndedType.Lose:
-                ResetStateMachine();
-                break;
-            case GameEndedType.Win:
-                ResetStateMachine();
-                break;
+            robotAnimator.SetTrigger(Constants.VICTORY_ANIMATION_TRIGGER);
         }
     }
 

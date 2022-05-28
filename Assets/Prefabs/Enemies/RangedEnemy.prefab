@@ -39,12 +39,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1695288084755670989}
-  - {fileID: 5851257129588460783}
-  - {fileID: 1682860117245988167}
   - {fileID: 4819712946685473478}
+  - {fileID: 1695288084755670989}
   - {fileID: 3383939410420002784}
   - {fileID: 2257644239023611050}
+  - {fileID: 5851257129588460783}
+  - {fileID: 1682860117245988167}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -524,7 +524,7 @@ Transform:
   - {fileID: 1695288083887501550}
   - {fileID: 1695288084770343014}
   m_Father: {fileID: 8998681092846823074}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &854157331132540155
 GameObject:
@@ -591,7 +591,7 @@ RectTransform:
   m_Children:
   - {fileID: 2667942660982128776}
   m_Father: {fileID: 8998681092846823074}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -963,7 +963,7 @@ Transform:
   - {fileID: 7660638741721553660}
   - {fileID: 6424376558763026223}
   m_Father: {fileID: 8998681092846823074}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1695288084770342937
 GameObject:
@@ -1211,7 +1211,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8998681092846823074}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &8775925994793264888
 BoxCollider:
@@ -1809,7 +1809,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8998681092846823074}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &1280854628108400081
 SkinnedMeshRenderer:
@@ -1831,7 +1831,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 08bc3bbad9218064cb392031234d6a6d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2791,7 +2791,7 @@ Transform:
   m_Children:
   - {fileID: 7889703560631067269}
   m_Father: {fileID: 8998681092846823074}
-  m_RootOrder: 1
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6706087406336478206
 GameObject:

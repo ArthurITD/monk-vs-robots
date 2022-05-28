@@ -658,12 +658,14 @@ MonoBehaviour:
     - {fileID: 3424513693488327385}
     - {fileID: 3424513692253795029}
     - {fileID: 3424513691825115057}
-  spearShaftMaterial: {fileID: 2100000, guid: 8724a079df7c3c94594994772cf0cafb, type: 2}
+  spearShaftMaterial: {fileID: 2100000, guid: dc71eb033f236ec4db74fb1ac9bc2a47, type: 2}
   spearPicker: {fileID: 2171356379467737384}
   spearPickupCollider: {fileID: 8364450534189647021}
   spearRangedController: {fileID: 3424513692552184580}
   characterCameraController: {fileID: 0}
   pickupDelay: 0.5
+  weaponHitDetector: {fileID: 0}
+  spearTipCollider: {fileID: 0}
 --- !u!114 &3424513692552184580
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -38,6 +38,7 @@ public class GameManager : MonoBehaviour
         character.SetActive(true);
         cameraController.Character = character;
         cameraController.enabled = true;
+
     }
 
     private void DefinePlayerAvatar()
