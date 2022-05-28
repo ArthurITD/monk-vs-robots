@@ -20,6 +20,8 @@ public class AssetsChooser : MonoBehaviour
     [SerializeField] private TMP_Text maxSpearsCountTMP;
     [SerializeField] private TMP_Text currentAvatarIndexTMP;
     [SerializeField] private TMP_Text maxAvatarsCountTMP;
+    [SerializeField] private AvatarPreviewManager avatarPreviewManager;
+    [SerializeField] private WeaponPreviewManager weaponPreviewManager;
 
     private int spearPreviewIndex = 0;
     private int avatarPreviewIndex = 0;
@@ -88,25 +90,25 @@ public class AssetsChooser : MonoBehaviour
     {
         //To do: change to  userAvatars[avatarPreviewIndex].avatarPreview
         var newAvatarPreview = userAvatars[avatarPreviewIndex];
-        string avatarData = $"Body fat: {newAvatarPreview.bodyFat}\n" +
+        avatarPreviewManager.ApplyAvatarPreviewChanges(newAvatarPreview);
+        /*string avatarData = $"Body fat: {newAvatarPreview.bodyFat}\n" +
             $"Body muscles: {newAvatarPreview.bodyMuscles}\n" +
             $"Eyes color: {newAvatarPreview.eyeColor}\n" +
             $"Hair color: {newAvatarPreview.hairColor}\n" +
             $"Hair style: {newAvatarPreview.hairStyle}\n" +
             $"Sex: {newAvatarPreview.sex}" +
             $"Skin color: {newAvatarPreview.skinColor}";
-        avatarDataTMP.text = avatarData;
+        avatarDataTMP.text = avatarData;*/
     }
 
     private void ChangeSpear()
     {
         //To do: change to  userSpears[spearPreviewIndex].spearPreview
         var newSpearPreview = userSpears[spearPreviewIndex];
+        weaponPreviewManager.ApplyWeaponPreview(newSpearPreview);
         string spearData = $"Damage: {newSpearPreview.damage}\n" +
             $"Element: {newSpearPreview.element}\n" +
-            $"Range: {newSpearPreview.range}\n" +
-            $"Shaft color: {newSpearPreview.shaftColor}\n" +
-            $"Tip material: {newSpearPreview.tipMaterial}";
+            $"Range: {newSpearPreview.range}\n";
         spearDataTMP.text = spearData;
     }
 
