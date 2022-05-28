@@ -14,7 +14,7 @@ public class AvatarPreviewManager : MonoBehaviour
     private CharacterTypeGameObjectDictionary charactersTypes;
     [SerializeField] private AvatarPreview currentAvatarPreview;
 
-    public void ApplyAvatarPreviewChanges(TotemAvatar choosedAvatar)
+    public CharacterType ApplyAvatarPreviewChanges(TotemAvatar choosedAvatar)
     {
         ApplyGender(choosedAvatar.sex);
         ApplyCharacterBodyType(choosedAvatar.bodyFat, choosedAvatar.bodyMuscles);
@@ -23,6 +23,8 @@ public class AvatarPreviewManager : MonoBehaviour
         currentAvatarPreview.ApplyHairColor(choosedAvatar.hairColor);
         currentAvatarPreview.ApplySkinColor(choosedAvatar.skinColor);
         currentAvatarPreview.ApplyHairStyle(choosedAvatar.hairStyle);
+
+        return currentCharacterType;
     }
 
     private void ApplyGender(SexEnum sex)
