@@ -18,13 +18,13 @@ public class SpearWeapon : MonoBehaviour
     [SerializeField] private CameraController characterCameraController;
     [Min(0)]
     [SerializeField] private float pickupDelay;
+    [SerializeField] private HitDetector weaponHitDetector;
+    [SerializeField] private Collider spearTipCollider;
 
     private TipMaterialEnum tipMaterial;
     private ElementEnum element;
 
     private GameObject character;
-    private HitDetector weaponHitDetector;
-    private Collider spearTipCollider;
     private int nonCriticalAttacks = 0;
     private float damageMultiplier = 1;
 
@@ -37,7 +37,6 @@ public class SpearWeapon : MonoBehaviour
     void Awake()
     {
         character = CharacterControllerHelper.Instance.Character;
-        weaponHitDetector = GetComponent<HitDetector>();
         InitializeSpear(TotemManager.Instance.currentSpear);
 
         EventHandler.RegisterEvent<bool>(character, "OnHitActivate", EnableHitCollider);
@@ -70,8 +69,6 @@ public class SpearWeapon : MonoBehaviour
 
         var newTip = tipTypes[tipMaterial];
         newTip.SetActive(true);
-        weaponHitDetector = newTip.GetComponent<HitDetector>();
-        spearTipCollider = newTip.GetComponent<BoxCollider>();
     }
 
     private void EnableHitCollider(bool isEnabled)
