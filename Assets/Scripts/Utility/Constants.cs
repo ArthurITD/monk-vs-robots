@@ -32,4 +32,9 @@ public static class Constants
     public const string VICTORY_ANIMATION_TRIGGER = "Victory";
     public const string SHOOT_ANIMATION_TRIGGER = "Shoot";
     public const string ROTATE_ANIMATION_TRIGGER = "Rotate";
+
+    public const string FATWIMP_AVATAR_INFO = "This avatar's max HP will be increased by 50%.";
+    public const string FATMUSCULAR_AVATAR_INFO = "This avatar will have à 15% chance to deal 150% critical damage.";
+    public const string THINWIMP_AVATAR_INFO = "This avatar will have à 15% chance to dodge any damage.";
+    public const string THINMUSCULAR_AVATAR_INFO = "This avatar's speed will be increased by 100%.";
 }

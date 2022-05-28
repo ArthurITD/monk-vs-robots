@@ -12,7 +12,7 @@ public class AvatarPreview : MonoBehaviour
     public HairStyleEnumGameObjectDictionary HairStyles { get => hairStyles; }
     public SexEnum CharacterGender { get => characterGender; }
 
-    private HairStyleEnum currentHairStyle;
+    private HairStyleEnum currentHairStyle = HairStyleEnum.Short;
 
     public void ApplySkinColor(Color skinColor)
     {

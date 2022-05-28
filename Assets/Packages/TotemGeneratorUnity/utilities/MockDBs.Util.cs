@@ -33,12 +33,14 @@ namespace utilities
             entitiesDB.AddSpear(new TotemSpear(TipMaterialEnum.Wood, ElementEnum.Earth, shaftColor3, 45.29f, 46.06f));
             entitiesDB.AddSpear(new TotemSpear(TipMaterialEnum.Obsidian, ElementEnum.Air, shaftColor4, 37.52f, 41.9f));
             entitiesDB.AddSpear(new TotemSpear(TipMaterialEnum.Wood, ElementEnum.Water, shaftColor5, 70.22f, 24.74f));
+            
             entitiesDB.AddSpear(new TotemSpear(TipMaterialEnum.Wood, ElementEnum.Earth, shaftColor6, 72.02f, 60.29f));
             entitiesDB.AddSpear(new TotemSpear(TipMaterialEnum.Wood, ElementEnum.Earth, shaftColor7, 75.14f, 68.62f));
-            entitiesDB.AddSpear(new TotemSpear(TipMaterialEnum.Flint, ElementEnum.Water, shaftColor8, 46.34f, 56.66f));
-            entitiesDB.AddSpear(new TotemSpear(TipMaterialEnum.Wood, ElementEnum.Air, shaftColor9, 43.9f, 37.75f));
-            entitiesDB.AddSpear(new TotemSpear(TipMaterialEnum.Wood, ElementEnum.Fire, shaftColor10, 53.23f, 74.52f));
-            entitiesDB.AddSpear(new TotemSpear(TipMaterialEnum.Bone, ElementEnum.Earth, shaftColor11, 44.13f, 67.27f));
+            entitiesDB.AddSpear(new TotemSpear(TipMaterialEnum.Flint, ElementEnum.Water, shaftColor8, 46.34f, 55.66f));
+            entitiesDB.AddSpear(new TotemSpear(TipMaterialEnum.Wood, ElementEnum.Air, shaftColor9, 40.9f, 45.75f));
+            entitiesDB.AddSpear(new TotemSpear(TipMaterialEnum.Obsidian, ElementEnum.Fire, shaftColor10, 53.23f, 80.52f));
+            entitiesDB.AddSpear(new TotemSpear(TipMaterialEnum.Bone, ElementEnum.Earth, shaftColor11, 44.13f, 75.27f));
+          
             entitiesDB.AddSpear(new TotemSpear(TipMaterialEnum.Obsidian, ElementEnum.Air, shaftColor12, 69.1f, 77.31f));
             entitiesDB.AddSpear(new TotemSpear(TipMaterialEnum.Flint, ElementEnum.Water, shaftColor13, 44.77f, 44.19f));
             entitiesDB.AddSpear(new TotemSpear(TipMaterialEnum.Wood, ElementEnum.Fire, shaftColor14, 42.51f, 47.44f));
@@ -80,20 +82,21 @@ namespace utilities
             entitiesDB.AddAvatar(new TotemAvatar(SexEnum.Female, skinColor1, hairColor1, HairStyleEnum.Dreadlocks, eyeColor1, BodyFatEnum.Thin, BodyMusclesEnum.Wimp));
             entitiesDB.AddAvatar(new TotemAvatar(SexEnum.Male, skinColor2, hairColor2, HairStyleEnum.BuzzCut, eyeColor2, BodyFatEnum.Fat, BodyMusclesEnum.Muscular));
             entitiesDB.AddAvatar(new TotemAvatar(SexEnum.Male, skinColor3, hairColor3, HairStyleEnum.Asymmetrical, eyeColor3, BodyFatEnum.Thin, BodyMusclesEnum.Muscular));
-            entitiesDB.AddAvatar(new TotemAvatar(SexEnum.Female, skinColor4, hairColor4, HairStyleEnum.Braids, eyeColor4, BodyFatEnum.Thin, BodyMusclesEnum.Muscular));
-            entitiesDB.AddAvatar(new TotemAvatar(SexEnum.Female, skinColor5, hairColor5, HairStyleEnum.Ponytail, eyeColor5, BodyFatEnum.Fat, BodyMusclesEnum.Wimp));
-            entitiesDB.AddAvatar(new TotemAvatar(SexEnum.Male, skinColor6, hairColor6, HairStyleEnum.Afro, eyeColor6, BodyFatEnum.Fat, BodyMusclesEnum.Wimp));
+            entitiesDB.AddAvatar(new TotemAvatar(SexEnum.Male, skinColor4, hairColor4, HairStyleEnum.Short, eyeColor4, BodyFatEnum.Thin, BodyMusclesEnum.Wimp));
+            entitiesDB.AddAvatar(new TotemAvatar(SexEnum.Male, skinColor5, hairColor5, HairStyleEnum.Ponytail, eyeColor5, BodyFatEnum.Fat, BodyMusclesEnum.Wimp));
+            entitiesDB.AddAvatar(new TotemAvatar(SexEnum.Male, skinColor6, hairColor6, HairStyleEnum.Ponytail, eyeColor6, BodyFatEnum.Fat, BodyMusclesEnum.Wimp));
+            entitiesDB.AddAvatar(new TotemAvatar(SexEnum.Male, skinColor1, hairColor1, HairStyleEnum.Short, eyeColor1, BodyFatEnum.Thin, BodyMusclesEnum.Wimp));
             entitiesDB.AddAvatar(new TotemAvatar(SexEnum.Female, skinColor7, hairColor7, HairStyleEnum.Long, eyeColor7, BodyFatEnum.Fat, BodyMusclesEnum.Muscular));
             entitiesDB.AddAvatar(new TotemAvatar(SexEnum.Male, skinColor8, hairColor8, HairStyleEnum.Short, eyeColor8, BodyFatEnum.Thin, BodyMusclesEnum.Wimp));
         }
 
         public static void PopulateUsersDB(TotemUsersDB usersDB)
         {
-            usersDB.AddNewUser("totem1", "indieverse");
-            usersDB.AddNewUser("totem2", "indieverse");
-            usersDB.AddNewUser("totem3", "indieverse");
-            usersDB.AddNewUser("totem4", "indieverse");
-            usersDB.AddNewUser("totem5", "indieverse");
+            usersDB.AddNewUser("totem1", "indieverse+=-1");
+            usersDB.AddNewUser("totem2", "indieverse+=-1");
+            usersDB.AddNewUser("totem", "indieverse");
+            usersDB.AddNewUser("totem4", "indieverse+=-1");
+            usersDB.AddNewUser("totem5", "indieverse+=-1");
         }
 
         public static void PopulateUsersWithEntities(TotemEntitiesDB entitiesDB, TotemUsersDB usersDB)
@@ -103,15 +106,15 @@ namespace utilities
             usersDB.AddAvatarToUser("totem2", entitiesDB.GetAvatar(1));
             usersDB.AddAvatarToUser("totem2", entitiesDB.GetAvatar(2));
             
-            usersDB.AddAvatarToUser("totem3", entitiesDB.GetAvatar(3));
-            usersDB.AddAvatarToUser("totem3", entitiesDB.GetAvatar(4));
-            usersDB.AddAvatarToUser("totem3", entitiesDB.GetAvatar(6));
-            usersDB.AddAvatarToUser("totem3", entitiesDB.GetAvatar(7));
+            usersDB.AddAvatarToUser("totem", entitiesDB.GetAvatar(3));
+            usersDB.AddAvatarToUser("totem", entitiesDB.GetAvatar(4));
+            usersDB.AddAvatarToUser("totem", entitiesDB.GetAvatar(5));
+            usersDB.AddAvatarToUser("totem", entitiesDB.GetAvatar(6));
 
-           // usersDB.AddAvatarToUser("totem4", entitiesDB.GetAvatar(6));
-            
-           // usersDB.AddAvatarToUser("totem5", entitiesDB.GetAvatar(7));
-            
+            // usersDB.AddAvatarToUser("totem4", entitiesDB.GetAvatar(6));
+
+            // usersDB.AddAvatarToUser("totem5", entitiesDB.GetAvatar(7));
+
             usersDB.AddSpearToUser("totem1", entitiesDB.GetSpear(0));
             
             usersDB.AddSpearToUser("totem2", entitiesDB.GetSpear(1));
@@ -119,12 +122,12 @@ namespace utilities
             usersDB.AddSpearToUser("totem2", entitiesDB.GetSpear(3));
             usersDB.AddSpearToUser("totem2", entitiesDB.GetSpear(4));
             
-            usersDB.AddSpearToUser("totem3", entitiesDB.GetSpear(5));
-            usersDB.AddSpearToUser("totem3", entitiesDB.GetSpear(6));
-            usersDB.AddSpearToUser("totem3", entitiesDB.GetSpear(7));
-            usersDB.AddSpearToUser("totem3", entitiesDB.GetSpear(8));
-            usersDB.AddSpearToUser("totem3", entitiesDB.GetSpear(9));
-            usersDB.AddSpearToUser("totem3", entitiesDB.GetSpear(10));
+            usersDB.AddSpearToUser("totem", entitiesDB.GetSpear(5));
+            usersDB.AddSpearToUser("totem", entitiesDB.GetSpear(6));
+            usersDB.AddSpearToUser("totem", entitiesDB.GetSpear(7));
+            usersDB.AddSpearToUser("totem", entitiesDB.GetSpear(8));
+            usersDB.AddSpearToUser("totem", entitiesDB.GetSpear(9));
+            usersDB.AddSpearToUser("totem", entitiesDB.GetSpear(10));
             
             usersDB.AddSpearToUser("totem4", entitiesDB.GetSpear(11));
             usersDB.AddSpearToUser("totem4", entitiesDB.GetSpear(12));
