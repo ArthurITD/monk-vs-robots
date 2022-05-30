@@ -22,6 +22,7 @@ public class SpearRanged : MonoBehaviour
 
     private void OnEnable()
     {
+        spearRigidBody.collisionDetectionMode = CollisionDetectionMode.Continuous;
         transform.position = testThrowingPosition.position;
         EnableDisableGravityProperties(true);
         spearRigidBody.AddForce(Camera.main.transform.forward * (throwingForce * forceMultiplier), ForceMode.Impulse);
