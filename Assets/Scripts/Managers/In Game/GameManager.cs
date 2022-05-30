@@ -61,17 +61,17 @@ public class GameManager : MonoBehaviour
     //Test purposes
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            if (ultimateCharacterLocomotion.IsAbilityTypeActive<SpearMelee>() && !isTestStopProcessing)
-            {
-                StartCoroutine(TestMeleeAttackStop());
-            }
-        }
-        if(Input.GetKeyDown(KeyCode.F1))
-        {
-            OnExit();
-        }
+        //if(Input.GetKeyDown(KeyCode.Mouse0))
+        //{
+        //    if (ultimateCharacterLocomotion.IsAbilityTypeActive<SpearMelee>() && !isTestStopProcessing)
+        //    {
+        //        StartCoroutine(TestMeleeAttackStop());
+        //    }
+        //}
+        //if(Input.GetKeyDown(KeyCode.F1))
+        //{
+        //    OnExit();
+        //}
     }
 
     //Test purposes
