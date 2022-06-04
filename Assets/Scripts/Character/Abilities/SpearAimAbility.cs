@@ -13,14 +13,14 @@ public class SpearAimAbility : Ability
 {
     private ILookSource m_LookSource;
     private SpearWeapon spearWeapon;
-    private Ability spearThrowAbility;
+    private Ability spearChargeAbility;
 
     [SerializeField] private GameObject CrosshairObject;
 
     public override void Awake()
     {
         spearWeapon = CharacterControllerHelper.Instance.charactersSpearWeapon;
-        spearThrowAbility = m_CharacterLocomotion.GetAbility<SpearThrowAbility>();
+        spearChargeAbility = m_CharacterLocomotion.GetAbility<SpearChargeAbility>();
         base.Awake();
     }
 
@@ -71,9 +71,9 @@ public class SpearAimAbility : Ability
     {
         base.AbilityStopped(force);
         ChangeAbilityState(false);
-        if(spearThrowAbility!=null && spearThrowAbility.IsActive)
+        if(spearChargeAbility != null && spearChargeAbility.IsActive)
         {
-            m_CharacterLocomotion.TryStopAbility(spearThrowAbility);
+            m_CharacterLocomotion.TryStopAbility(spearChargeAbility);
         }
     }
 
