@@ -82,9 +82,9 @@ namespace utilities
             entitiesDB.AddAvatar(new TotemAvatar(SexEnum.Female, skinColor1, hairColor1, HairStyleEnum.Dreadlocks, eyeColor1, BodyFatEnum.Thin, BodyMusclesEnum.Wimp));
             entitiesDB.AddAvatar(new TotemAvatar(SexEnum.Male, skinColor2, hairColor2, HairStyleEnum.BuzzCut, eyeColor2, BodyFatEnum.Fat, BodyMusclesEnum.Muscular));
             entitiesDB.AddAvatar(new TotemAvatar(SexEnum.Male, skinColor3, hairColor3, HairStyleEnum.Asymmetrical, eyeColor3, BodyFatEnum.Thin, BodyMusclesEnum.Muscular));
-            entitiesDB.AddAvatar(new TotemAvatar(SexEnum.Male, skinColor4, hairColor4, HairStyleEnum.Short, eyeColor4, BodyFatEnum.Thin, BodyMusclesEnum.Wimp));
+            entitiesDB.AddAvatar(new TotemAvatar(SexEnum.Male, skinColor4, hairColor4, HairStyleEnum.Short, eyeColor4, BodyFatEnum.Thin, BodyMusclesEnum.Muscular));
             entitiesDB.AddAvatar(new TotemAvatar(SexEnum.Male, skinColor5, hairColor5, HairStyleEnum.Ponytail, eyeColor5, BodyFatEnum.Fat, BodyMusclesEnum.Wimp));
-            entitiesDB.AddAvatar(new TotemAvatar(SexEnum.Male, skinColor6, hairColor6, HairStyleEnum.Ponytail, eyeColor6, BodyFatEnum.Fat, BodyMusclesEnum.Wimp));
+            entitiesDB.AddAvatar(new TotemAvatar(SexEnum.Female, skinColor6, hairColor6, HairStyleEnum.Ponytail, eyeColor6, BodyFatEnum.Thin, BodyMusclesEnum.Wimp));
             entitiesDB.AddAvatar(new TotemAvatar(SexEnum.Male, skinColor1, hairColor1, HairStyleEnum.Short, eyeColor1, BodyFatEnum.Thin, BodyMusclesEnum.Wimp));
             entitiesDB.AddAvatar(new TotemAvatar(SexEnum.Female, skinColor7, hairColor7, HairStyleEnum.Long, eyeColor7, BodyFatEnum.Fat, BodyMusclesEnum.Muscular));
             entitiesDB.AddAvatar(new TotemAvatar(SexEnum.Male, skinColor8, hairColor8, HairStyleEnum.Short, eyeColor8, BodyFatEnum.Thin, BodyMusclesEnum.Wimp));

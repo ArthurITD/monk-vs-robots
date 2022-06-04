@@ -68,10 +68,10 @@ public class GameManager : MonoBehaviour
         //        StartCoroutine(TestMeleeAttackStop());
         //    }
         //}
-        //if(Input.GetKeyDown(KeyCode.F1))
-        //{
-        //    OnExit();
-        //}
+        if (Input.GetKeyDown(KeyCode.F1))
+        {
+            OnExit();
+        }
     }
 
     //Test purposes
