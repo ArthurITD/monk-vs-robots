@@ -1593,7 +1593,7 @@ MonoBehaviour:
   m_FramerateIndependentForce: 0
   m_Mass: 100
   m_SkinWidth: 0.08
-  m_SlopeLimit: 40
+  m_SlopeLimit: 60.4
   m_MaxStepHeight: 0.35
   m_MotorAcceleration: {x: 0.18, y: 0, z: 0.18}
   m_MotorDamping: 0.27
