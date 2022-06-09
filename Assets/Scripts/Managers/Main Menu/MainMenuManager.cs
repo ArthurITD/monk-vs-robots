@@ -1,6 +1,5 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,12 +9,15 @@ public class MainMenuManager : MonoBehaviour
     public GameObject avatarChooserPanel;
     public GameObject mainMenuPanel;
     public GameObject volumeSettingsPanel;
+    public GameObject gameTitleObject;
 
     public Slider uiVolumeSlider;
     public Slider effectsVolumeSlider;
     public Slider musicVolumeSlider;
 
     public AssetsChooser assetsChooser;
+
+    public ArenaPreviewManager arenaPreviewManager;
 
     private AuthenticationManager authenticationManager;
     
@@ -42,15 +44,23 @@ public class MainMenuManager : MonoBehaviour
 
     public void OnChooseAvatarClick()
     {
+        gameTitleObject.SetActive(false);
         mainMenuPanel.SetActive(false);
-        avatarChooserPanel.SetActive(true);
+        arenaPreviewManager.SwitchCameraToAvatarChooser().OnComplete(() =>
+        {
+            avatarChooserPanel.SetActive(true);
+        });
     }
 
     public void OnLogOutClick()
     {
         assetsChooser.ClearUserData();
         mainMenuPanel.SetActive(false);
-        authenticationManager.LogOut();
+        
+        arenaPreviewManager.SwitchCameraToShrine().OnComplete(() =>
+        {
+            authenticationManager.LogOut();
+        });
     }
 
     public void OnExitClick()
@@ -66,7 +76,11 @@ public class MainMenuManager : MonoBehaviour
     public void OnAvatarChooserCancelClick()
     {
         avatarChooserPanel.SetActive(false);
-        mainMenuPanel.SetActive(true);
+        arenaPreviewManager.SwitchCameraToShrine().OnComplete(() =>
+        {
+            mainMenuPanel.SetActive(true);
+            gameTitleObject.SetActive(true);
+        });
     }
 
     public void ShowHideVolumeSettings(bool isActive)
