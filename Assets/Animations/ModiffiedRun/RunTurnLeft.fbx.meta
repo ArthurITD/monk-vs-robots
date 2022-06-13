@@ -4,7 +4,7 @@ ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable:
   - first:
-      74: 3979743301174869863
+      74: -4369991305461504825
     second: RunTurnLeft
   externalObjects: {}
   materials:
@@ -22,10 +22,9 @@ ModelImporter:
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: "\nClip 'rig|rig|Scene' has import animation warnings
-      that might lower retargeting quality:\n\t'ORG-upper_arm.R' has scale animation
-      that will be discarded.\n\t'ORG-forearm.R' has scale animation that will be
-      discarded.\n"
+    animationImportWarnings: "\nClip 'rig|Scene' has import animation warnings that
+      might lower retargeting quality:\n\t'ORG-upper_arm.R' has scale animation that
+      will be discarded.\n\t'ORG-forearm.R' has scale animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -40,7 +39,7 @@ ModelImporter:
     clipAnimations:
     - serializedVersion: 16
       name: RunTurnLeft
-      takeName: rig|rig|Scene
+      takeName: rig|Scene
       internalID: 0
       firstFrame: 0
       lastFrame: 14
@@ -61,122 +60,7 @@ ModelImporter:
       heightFromFeet: 0
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves:
-      - name: LegIndex
-        curve:
-          serializedVersion: 2
-          curve:
-          - serializedVersion: 3
-            time: 0
-            value: 0
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 0.0015212982
-            value: 1
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 0.009634889
-            value: 0.999803
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 0.010649087
-            value: 0
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 0.24949291
-            value: 0
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 0.2505071
-            value: 0.3
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 0.4984787
-            value: 0.3
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 0.5
-            value: 0.7
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 0.74847865
-            value: 0.7
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 0.7505071
-            value: 1
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 0.99898577
-            value: 1
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          - serializedVersion: 3
-            time: 1
-            value: 0
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
-            weightedMode: 0
-            inWeight: 0
-            outWeight: 0
-          preInfinity: 3
-          postInfinity: 3
-          rotationOrder: 4
+      curves: []
       events: []
       transformMask:
       - path: 
@@ -189,6 +73,8 @@ ModelImporter:
         weight: 0
       - path: rig/referencebone/referencebone_end/referencebone_end_end
         weight: 0
+      - path: rig/referencebone/referencebone_end/referencebone_end_end/referencebone_end_end_end
+        weight: 0
       - path: rig/root
         weight: 1
       - path: rig/root/foot.ik.L
@@ -198,6 +84,8 @@ ModelImporter:
       - path: rig/root/foot.ik.L/foot_roll.ik.L/foot_roll.ik.L_end
         weight: 0
       - path: rig/root/foot.ik.L/foot_roll.ik.L/foot_roll.ik.L_end/foot_roll.ik.L_end_end
+        weight: 0
+      - path: rig/root/foot.ik.L/foot_roll.ik.L/foot_roll.ik.L_end/foot_roll.ik.L_end_end/foot_roll.ik.L_end_end_end
         weight: 0
       - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01
         weight: 0
@@ -213,6 +101,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-foot.L.roll.02/MCH-foot.L.001/MCH-foot.L.001_end/MCH-foot.L.001_end_end
         weight: 0
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-foot.L.roll.02/MCH-foot.L.001/MCH-foot.L.001_end/MCH-foot.L.001_end_end/MCH-foot.L.001_end_end_end
+        weight: 0
       - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-toe.L.socket1
         weight: 0
       - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-toe.L.socket1/MCH-toe.L.parent
@@ -223,6 +113,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-toe.L.socket1/MCH-toe.L.parent/toe.L/toe.L_end/toe.L_end_end
         weight: 0
+      - path: rig/root/foot.ik.L/MCH-foot.L.rocker.01/MCH-foot.L.rocker.02/MCH-foot.L.roll.01/MCH-toe.L.socket1/MCH-toe.L.parent/toe.L/toe.L_end/toe.L_end_end/toe.L_end_end_end
+        weight: 0
       - path: rig/root/foot.ik.R
         weight: 0
       - path: rig/root/foot.ik.R/foot_roll.ik.R
@@ -230,6 +122,8 @@ ModelImporter:
       - path: rig/root/foot.ik.R/foot_roll.ik.R/foot_roll.ik.R_end
         weight: 0
       - path: rig/root/foot.ik.R/foot_roll.ik.R/foot_roll.ik.R_end/foot_roll.ik.R_end_end
+        weight: 0
+      - path: rig/root/foot.ik.R/foot_roll.ik.R/foot_roll.ik.R_end/foot_roll.ik.R_end_end/foot_roll.ik.R_end_end_end
         weight: 0
       - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01
         weight: 0
@@ -245,6 +139,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-foot.R.roll.02/MCH-foot.R.001/MCH-foot.R.001_end/MCH-foot.R.001_end_end
         weight: 0
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-foot.R.roll.02/MCH-foot.R.001/MCH-foot.R.001_end/MCH-foot.R.001_end_end/MCH-foot.R.001_end_end_end
+        weight: 0
       - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-toe.R.socket1
         weight: 0
       - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-toe.R.socket1/MCH-toe.R.parent
@@ -255,6 +151,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-toe.R.socket1/MCH-toe.R.parent/toe.R/toe.R_end/toe.R_end_end
         weight: 0
+      - path: rig/root/foot.ik.R/MCH-foot.R.rocker.01/MCH-foot.R.rocker.02/MCH-foot.R.roll.01/MCH-toe.R.socket1/MCH-toe.R.parent/toe.R/toe.R_end/toe.R_end_end/toe.R_end_end_end
+        weight: 0
       - path: rig/root/hand.ik.L
         weight: 0
       - path: rig/root/hand.ik.L/MCH-hand.L.001
@@ -262,6 +160,8 @@ ModelImporter:
       - path: rig/root/hand.ik.L/MCH-hand.L.001/MCH-hand.L.001_end
         weight: 0
       - path: rig/root/hand.ik.L/MCH-hand.L.001/MCH-hand.L.001_end/MCH-hand.L.001_end_end
+        weight: 0
+      - path: rig/root/hand.ik.L/MCH-hand.L.001/MCH-hand.L.001_end/MCH-hand.L.001_end_end/MCH-hand.L.001_end_end_end
         weight: 0
       - path: rig/root/hand.ik.R
         weight: 0
@@ -271,6 +171,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/hand.ik.R/MCH-hand.R.001/MCH-hand.R.001_end/MCH-hand.R.001_end_end
         weight: 0
+      - path: rig/root/hand.ik.R/MCH-hand.R.001/MCH-hand.R.001_end/MCH-hand.R.001_end_end/MCH-hand.R.001_end_end_end
+        weight: 0
       - path: rig/root/MCH-elbow_target.ik_parent.L
         weight: 0
       - path: rig/root/MCH-elbow_target.ik_parent.L/elbow_target.ik.L
@@ -279,6 +181,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/MCH-elbow_target.ik_parent.L/elbow_target.ik.L/elbow_target.ik.L_end/elbow_target.ik.L_end_end
         weight: 0
+      - path: rig/root/MCH-elbow_target.ik_parent.L/elbow_target.ik.L/elbow_target.ik.L_end/elbow_target.ik.L_end_end/elbow_target.ik.L_end_end_end
+        weight: 0
       - path: rig/root/MCH-elbow_target.ik_parent.R
         weight: 0
       - path: rig/root/MCH-elbow_target.ik_parent.R/elbow_target.ik.R
@@ -286,6 +190,8 @@ ModelImporter:
       - path: rig/root/MCH-elbow_target.ik_parent.R/elbow_target.ik.R/elbow_target.ik.R_end
         weight: 0
       - path: rig/root/MCH-elbow_target.ik_parent.R/elbow_target.ik.R/elbow_target.ik.R_end/elbow_target.ik.R_end_end
+        weight: 0
+      - path: rig/root/MCH-elbow_target.ik_parent.R/elbow_target.ik.R/elbow_target.ik.R_end/elbow_target.ik.R_end_end/elbow_target.ik.R_end_end_end
         weight: 0
       - path: rig/root/MCH-head.socket2
         weight: 0
@@ -297,6 +203,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/MCH-head.socket2/head/MCH-head/MCH-head_end/MCH-head_end_end
         weight: 0
+      - path: rig/root/MCH-head.socket2/head/MCH-head/MCH-head_end/MCH-head_end_end/MCH-head_end_end_end
+        weight: 0
       - path: rig/root/MCH-hips_fk_ns_ch
         weight: 0
       - path: rig/root/MCH-hips_fk_ns_ch/MCH-thigh.fk.L.socket1
@@ -304,6 +212,8 @@ ModelImporter:
       - path: rig/root/MCH-hips_fk_ns_ch/MCH-thigh.fk.L.socket1/MCH-thigh.fk.L.socket1_end
         weight: 0
       - path: rig/root/MCH-hips_fk_ns_ch/MCH-thigh.fk.L.socket1/MCH-thigh.fk.L.socket1_end/MCH-thigh.fk.L.socket1_end_end
+        weight: 0
+      - path: rig/root/MCH-hips_fk_ns_ch/MCH-thigh.fk.L.socket1/MCH-thigh.fk.L.socket1_end/MCH-thigh.fk.L.socket1_end_end/MCH-thigh.fk.L.socket1_end_end_end
         weight: 0
       - path: rig/root/MCH-hips_fk_ns_ch.001
         weight: 0
@@ -313,6 +223,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/MCH-hips_fk_ns_ch.001/MCH-thigh.fk.R.socket1/MCH-thigh.fk.R.socket1_end/MCH-thigh.fk.R.socket1_end_end
         weight: 0
+      - path: rig/root/MCH-hips_fk_ns_ch.001/MCH-thigh.fk.R.socket1/MCH-thigh.fk.R.socket1_end/MCH-thigh.fk.R.socket1_end_end/MCH-thigh.fk.R.socket1_end_end_end
+        weight: 0
       - path: rig/root/MCH-hips_ik_ns_ch
         weight: 0
       - path: rig/root/MCH-hips_ik_ns_ch/MCH-shin.stretch.ik.L
@@ -320,6 +232,8 @@ ModelImporter:
       - path: rig/root/MCH-hips_ik_ns_ch/MCH-shin.stretch.ik.L/MCH-shin.stretch.ik.L_end
         weight: 0
       - path: rig/root/MCH-hips_ik_ns_ch/MCH-shin.stretch.ik.L/MCH-shin.stretch.ik.L_end/MCH-shin.stretch.ik.L_end_end
+        weight: 0
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-shin.stretch.ik.L/MCH-shin.stretch.ik.L_end/MCH-shin.stretch.ik.L_end_end/MCH-shin.stretch.ik.L_end_end_end
         weight: 0
       - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.ik.L
         weight: 0
@@ -329,6 +243,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.ik.L/MCH-shin.ik.L/MCH-shin.ik.L_end/MCH-shin.ik.L_end_end
         weight: 0
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.ik.L/MCH-shin.ik.L/MCH-shin.ik.L_end/MCH-shin.ik.L_end_end/MCH-shin.ik.L_end_end_end
+        weight: 0
       - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.nostr.ik.L
         weight: 0
       - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.nostr.ik.L/MCH-shin.nostr.ik.L
@@ -337,11 +253,15 @@ ModelImporter:
         weight: 0
       - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.nostr.ik.L/MCH-shin.nostr.ik.L/MCH-shin.nostr.ik.L_end/MCH-shin.nostr.ik.L_end_end
         weight: 0
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.nostr.ik.L/MCH-shin.nostr.ik.L/MCH-shin.nostr.ik.L_end/MCH-shin.nostr.ik.L_end_end/MCH-shin.nostr.ik.L_end_end_end
+        weight: 0
       - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.stretch.ik.L
         weight: 0
       - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.stretch.ik.L/MCH-thigh.stretch.ik.L_end
         weight: 0
       - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.stretch.ik.L/MCH-thigh.stretch.ik.L_end/MCH-thigh.stretch.ik.L_end_end
+        weight: 0
+      - path: rig/root/MCH-hips_ik_ns_ch/MCH-thigh.stretch.ik.L/MCH-thigh.stretch.ik.L_end/MCH-thigh.stretch.ik.L_end_end/MCH-thigh.stretch.ik.L_end_end_end
         weight: 0
       - path: rig/root/MCH-hips_ik_ns_ch.001
         weight: 0
@@ -351,6 +271,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-shin.stretch.ik.R/MCH-shin.stretch.ik.R_end/MCH-shin.stretch.ik.R_end_end
         weight: 0
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-shin.stretch.ik.R/MCH-shin.stretch.ik.R_end/MCH-shin.stretch.ik.R_end_end/MCH-shin.stretch.ik.R_end_end_end
+        weight: 0
       - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.ik.R
         weight: 0
       - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.ik.R/MCH-shin.ik.R
@@ -358,6 +280,8 @@ ModelImporter:
       - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.ik.R/MCH-shin.ik.R/MCH-shin.ik.R_end
         weight: 0
       - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.ik.R/MCH-shin.ik.R/MCH-shin.ik.R_end/MCH-shin.ik.R_end_end
+        weight: 0
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.ik.R/MCH-shin.ik.R/MCH-shin.ik.R_end/MCH-shin.ik.R_end_end/MCH-shin.ik.R_end_end_end
         weight: 0
       - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.nostr.ik.R
         weight: 0
@@ -367,11 +291,15 @@ ModelImporter:
         weight: 0
       - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.nostr.ik.R/MCH-shin.nostr.ik.R/MCH-shin.nostr.ik.R_end/MCH-shin.nostr.ik.R_end_end
         weight: 0
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.nostr.ik.R/MCH-shin.nostr.ik.R/MCH-shin.nostr.ik.R_end/MCH-shin.nostr.ik.R_end_end/MCH-shin.nostr.ik.R_end_end_end
+        weight: 0
       - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.stretch.ik.R
         weight: 0
       - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.stretch.ik.R/MCH-thigh.stretch.ik.R_end
         weight: 0
       - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.stretch.ik.R/MCH-thigh.stretch.ik.R_end/MCH-thigh.stretch.ik.R_end_end
+        weight: 0
+      - path: rig/root/MCH-hips_ik_ns_ch.001/MCH-thigh.stretch.ik.R/MCH-thigh.stretch.ik.R_end/MCH-thigh.stretch.ik.R_end_end/MCH-thigh.stretch.ik.R_end_end_end
         weight: 0
       - path: rig/root/MCH-hips_rh_ns_ch
         weight: 0
@@ -383,6 +311,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/MCH-hips_rh_ns_ch/MCH-knee_hose_p.L/knee_hose.L/knee_hose.L_end/knee_hose.L_end_end
         weight: 0
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-knee_hose_p.L/knee_hose.L/knee_hose.L_end/knee_hose.L_end_end/knee_hose.L_end_end_end
+        weight: 0
       - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_end_p.L
         weight: 0
       - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_end_p.L/shin_hose_end.L
@@ -390,6 +320,8 @@ ModelImporter:
       - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_end_p.L/shin_hose_end.L/shin_hose_end.L_end
         weight: 0
       - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_end_p.L/shin_hose_end.L/shin_hose_end.L_end/shin_hose_end.L_end_end
+        weight: 0
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_end_p.L/shin_hose_end.L/shin_hose_end.L_end/shin_hose_end.L_end_end/shin_hose_end.L_end_end_end
         weight: 0
       - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_p.L
         weight: 0
@@ -399,6 +331,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_p.L/shin_hose.L/shin_hose.L_end/shin_hose.L_end_end
         weight: 0
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-shin_hose_p.L/shin_hose.L/shin_hose.L_end/shin_hose.L_end_end/shin_hose.L_end_end_end
+        weight: 0
       - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_end_p.L
         weight: 0
       - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_end_p.L/thigh_hose_end.L
@@ -407,6 +341,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_end_p.L/thigh_hose_end.L/thigh_hose_end.L_end/thigh_hose_end.L_end_end
         weight: 0
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_end_p.L/thigh_hose_end.L/thigh_hose_end.L_end/thigh_hose_end.L_end_end/thigh_hose_end.L_end_end_end
+        weight: 0
       - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_p.L
         weight: 0
       - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_p.L/thigh_hose.L
@@ -414,6 +350,8 @@ ModelImporter:
       - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_p.L/thigh_hose.L/thigh_hose.L_end
         weight: 0
       - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_p.L/thigh_hose.L/thigh_hose.L_end/thigh_hose.L_end_end
+        weight: 0
+      - path: rig/root/MCH-hips_rh_ns_ch/MCH-thigh_hose_p.L/thigh_hose.L/thigh_hose.L_end/thigh_hose.L_end_end/thigh_hose.L_end_end_end
         weight: 0
       - path: rig/root/MCH-hips_rh_ns_ch.001
         weight: 0
@@ -425,6 +363,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-knee_hose_p.R/knee_hose.R/knee_hose.R_end/knee_hose.R_end_end
         weight: 0
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-knee_hose_p.R/knee_hose.R/knee_hose.R_end/knee_hose.R_end_end/knee_hose.R_end_end_end
+        weight: 0
       - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_end_p.R
         weight: 0
       - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_end_p.R/shin_hose_end.R
@@ -432,6 +372,8 @@ ModelImporter:
       - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_end_p.R/shin_hose_end.R/shin_hose_end.R_end
         weight: 0
       - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_end_p.R/shin_hose_end.R/shin_hose_end.R_end/shin_hose_end.R_end_end
+        weight: 0
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_end_p.R/shin_hose_end.R/shin_hose_end.R_end/shin_hose_end.R_end_end/shin_hose_end.R_end_end_end
         weight: 0
       - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_p.R
         weight: 0
@@ -441,6 +383,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_p.R/shin_hose.R/shin_hose.R_end/shin_hose.R_end_end
         weight: 0
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-shin_hose_p.R/shin_hose.R/shin_hose.R_end/shin_hose.R_end_end/shin_hose.R_end_end_end
+        weight: 0
       - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_end_p.R
         weight: 0
       - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_end_p.R/thigh_hose_end.R
@@ -448,6 +392,8 @@ ModelImporter:
       - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_end_p.R/thigh_hose_end.R/thigh_hose_end.R_end
         weight: 0
       - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_end_p.R/thigh_hose_end.R/thigh_hose_end.R_end/thigh_hose_end.R_end_end
+        weight: 0
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_end_p.R/thigh_hose_end.R/thigh_hose_end.R_end/thigh_hose_end.R_end_end/thigh_hose_end.R_end_end_end
         weight: 0
       - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_p.R
         weight: 0
@@ -457,6 +403,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_p.R/thigh_hose.R/thigh_hose.R_end/thigh_hose.R_end_end
         weight: 0
+      - path: rig/root/MCH-hips_rh_ns_ch.001/MCH-thigh_hose_p.R/thigh_hose.R/thigh_hose.R_end/thigh_hose.R_end_end/thigh_hose.R_end_end_end
+        weight: 0
       - path: rig/root/MCH-knee_target.ik_parent.L
         weight: 0
       - path: rig/root/MCH-knee_target.ik_parent.L/knee_target.ik.L
@@ -464,6 +412,8 @@ ModelImporter:
       - path: rig/root/MCH-knee_target.ik_parent.L/knee_target.ik.L/knee_target.ik.L_end
         weight: 0
       - path: rig/root/MCH-knee_target.ik_parent.L/knee_target.ik.L/knee_target.ik.L_end/knee_target.ik.L_end_end
+        weight: 0
+      - path: rig/root/MCH-knee_target.ik_parent.L/knee_target.ik.L/knee_target.ik.L_end/knee_target.ik.L_end_end/knee_target.ik.L_end_end_end
         weight: 0
       - path: rig/root/MCH-knee_target.ik_parent.R
         weight: 0
@@ -473,6 +423,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/MCH-knee_target.ik_parent.R/knee_target.ik.R/knee_target.ik.R_end/knee_target.ik.R_end_end
         weight: 0
+      - path: rig/root/MCH-knee_target.ik_parent.R/knee_target.ik.R/knee_target.ik.R_end/knee_target.ik.R_end_end/knee_target.ik.R_end_end_end
+        weight: 0
       - path: rig/root/MCH-shoulder_fk_ns_ch.L
         weight: 0
       - path: rig/root/MCH-shoulder_fk_ns_ch.L/MCH-upper_arm.fk.L.socket1
@@ -480,6 +432,8 @@ ModelImporter:
       - path: rig/root/MCH-shoulder_fk_ns_ch.L/MCH-upper_arm.fk.L.socket1/MCH-upper_arm.fk.L.socket1_end
         weight: 0
       - path: rig/root/MCH-shoulder_fk_ns_ch.L/MCH-upper_arm.fk.L.socket1/MCH-upper_arm.fk.L.socket1_end/MCH-upper_arm.fk.L.socket1_end_end
+        weight: 0
+      - path: rig/root/MCH-shoulder_fk_ns_ch.L/MCH-upper_arm.fk.L.socket1/MCH-upper_arm.fk.L.socket1_end/MCH-upper_arm.fk.L.socket1_end_end/MCH-upper_arm.fk.L.socket1_end_end_end
         weight: 0
       - path: rig/root/MCH-shoulder_fk_ns_ch.R
         weight: 0
@@ -489,6 +443,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/MCH-shoulder_fk_ns_ch.R/MCH-upper_arm.fk.R.socket1/MCH-upper_arm.fk.R.socket1_end/MCH-upper_arm.fk.R.socket1_end_end
         weight: 0
+      - path: rig/root/MCH-shoulder_fk_ns_ch.R/MCH-upper_arm.fk.R.socket1/MCH-upper_arm.fk.R.socket1_end/MCH-upper_arm.fk.R.socket1_end_end/MCH-upper_arm.fk.R.socket1_end_end_end
+        weight: 0
       - path: rig/root/MCH-shoulder_ik_ns_ch.L
         weight: 0
       - path: rig/root/MCH-shoulder_ik_ns_ch.L/MCH-forearm.stretch.ik.L
@@ -496,6 +452,8 @@ ModelImporter:
       - path: rig/root/MCH-shoulder_ik_ns_ch.L/MCH-forearm.stretch.ik.L/MCH-forearm.stretch.ik.L_end
         weight: 0
       - path: rig/root/MCH-shoulder_ik_ns_ch.L/MCH-forearm.stretch.ik.L/MCH-forearm.stretch.ik.L_end/MCH-forearm.stretch.ik.L_end_end
+        weight: 0
+      - path: rig/root/MCH-shoulder_ik_ns_ch.L/MCH-forearm.stretch.ik.L/MCH-forearm.stretch.ik.L_end/MCH-forearm.stretch.ik.L_end_end/MCH-forearm.stretch.ik.L_end_end_end
         weight: 0
       - path: rig/root/MCH-shoulder_ik_ns_ch.L/MCH-upper_arm.ik.L
         weight: 0
@@ -505,6 +463,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/MCH-shoulder_ik_ns_ch.L/MCH-upper_arm.ik.L/MCH-forearm.ik.L/MCH-forearm.ik.L_end/MCH-forearm.ik.L_end_end
         weight: 0
+      - path: rig/root/MCH-shoulder_ik_ns_ch.L/MCH-upper_arm.ik.L/MCH-forearm.ik.L/MCH-forearm.ik.L_end/MCH-forearm.ik.L_end_end/MCH-forearm.ik.L_end_end_end
+        weight: 0
       - path: rig/root/MCH-shoulder_ik_ns_ch.L/MCH-upper_arm.nostr.ik.L
         weight: 0
       - path: rig/root/MCH-shoulder_ik_ns_ch.L/MCH-upper_arm.nostr.ik.L/MCH-forearm.nostr.ik.L
@@ -513,11 +473,15 @@ ModelImporter:
         weight: 0
       - path: rig/root/MCH-shoulder_ik_ns_ch.L/MCH-upper_arm.nostr.ik.L/MCH-forearm.nostr.ik.L/MCH-forearm.nostr.ik.L_end/MCH-forearm.nostr.ik.L_end_end
         weight: 0
+      - path: rig/root/MCH-shoulder_ik_ns_ch.L/MCH-upper_arm.nostr.ik.L/MCH-forearm.nostr.ik.L/MCH-forearm.nostr.ik.L_end/MCH-forearm.nostr.ik.L_end_end/MCH-forearm.nostr.ik.L_end_end_end
+        weight: 0
       - path: rig/root/MCH-shoulder_ik_ns_ch.L/MCH-upper_arm.stretch.ik.L
         weight: 0
       - path: rig/root/MCH-shoulder_ik_ns_ch.L/MCH-upper_arm.stretch.ik.L/MCH-upper_arm.stretch.ik.L_end
         weight: 0
       - path: rig/root/MCH-shoulder_ik_ns_ch.L/MCH-upper_arm.stretch.ik.L/MCH-upper_arm.stretch.ik.L_end/MCH-upper_arm.stretch.ik.L_end_end
+        weight: 0
+      - path: rig/root/MCH-shoulder_ik_ns_ch.L/MCH-upper_arm.stretch.ik.L/MCH-upper_arm.stretch.ik.L_end/MCH-upper_arm.stretch.ik.L_end_end/MCH-upper_arm.stretch.ik.L_end_end_end
         weight: 0
       - path: rig/root/MCH-shoulder_ik_ns_ch.R
         weight: 0
@@ -527,6 +491,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/MCH-shoulder_ik_ns_ch.R/MCH-forearm.stretch.ik.R/MCH-forearm.stretch.ik.R_end/MCH-forearm.stretch.ik.R_end_end
         weight: 0
+      - path: rig/root/MCH-shoulder_ik_ns_ch.R/MCH-forearm.stretch.ik.R/MCH-forearm.stretch.ik.R_end/MCH-forearm.stretch.ik.R_end_end/MCH-forearm.stretch.ik.R_end_end_end
+        weight: 0
       - path: rig/root/MCH-shoulder_ik_ns_ch.R/MCH-upper_arm.ik.R
         weight: 0
       - path: rig/root/MCH-shoulder_ik_ns_ch.R/MCH-upper_arm.ik.R/MCH-forearm.ik.R
@@ -534,6 +500,8 @@ ModelImporter:
       - path: rig/root/MCH-shoulder_ik_ns_ch.R/MCH-upper_arm.ik.R/MCH-forearm.ik.R/MCH-forearm.ik.R_end
         weight: 0
       - path: rig/root/MCH-shoulder_ik_ns_ch.R/MCH-upper_arm.ik.R/MCH-forearm.ik.R/MCH-forearm.ik.R_end/MCH-forearm.ik.R_end_end
+        weight: 0
+      - path: rig/root/MCH-shoulder_ik_ns_ch.R/MCH-upper_arm.ik.R/MCH-forearm.ik.R/MCH-forearm.ik.R_end/MCH-forearm.ik.R_end_end/MCH-forearm.ik.R_end_end_end
         weight: 0
       - path: rig/root/MCH-shoulder_ik_ns_ch.R/MCH-upper_arm.nostr.ik.R
         weight: 0
@@ -543,11 +511,15 @@ ModelImporter:
         weight: 0
       - path: rig/root/MCH-shoulder_ik_ns_ch.R/MCH-upper_arm.nostr.ik.R/MCH-forearm.nostr.ik.R/MCH-forearm.nostr.ik.R_end/MCH-forearm.nostr.ik.R_end_end
         weight: 0
+      - path: rig/root/MCH-shoulder_ik_ns_ch.R/MCH-upper_arm.nostr.ik.R/MCH-forearm.nostr.ik.R/MCH-forearm.nostr.ik.R_end/MCH-forearm.nostr.ik.R_end_end/MCH-forearm.nostr.ik.R_end_end_end
+        weight: 0
       - path: rig/root/MCH-shoulder_ik_ns_ch.R/MCH-upper_arm.stretch.ik.R
         weight: 0
       - path: rig/root/MCH-shoulder_ik_ns_ch.R/MCH-upper_arm.stretch.ik.R/MCH-upper_arm.stretch.ik.R_end
         weight: 0
       - path: rig/root/MCH-shoulder_ik_ns_ch.R/MCH-upper_arm.stretch.ik.R/MCH-upper_arm.stretch.ik.R_end/MCH-upper_arm.stretch.ik.R_end_end
+        weight: 0
+      - path: rig/root/MCH-shoulder_ik_ns_ch.R/MCH-upper_arm.stretch.ik.R/MCH-upper_arm.stretch.ik.R_end/MCH-upper_arm.stretch.ik.R_end_end/MCH-upper_arm.stretch.ik.R_end_end_end
         weight: 0
       - path: rig/root/MCH-shoulder_rh_ns_ch.L
         weight: 0
@@ -559,6 +531,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/MCH-shoulder_rh_ns_ch.L/MCH-elbow_hose_p.L/elbow_hose.L/elbow_hose.L_end/elbow_hose.L_end_end
         weight: 0
+      - path: rig/root/MCH-shoulder_rh_ns_ch.L/MCH-elbow_hose_p.L/elbow_hose.L/elbow_hose.L_end/elbow_hose.L_end_end/elbow_hose.L_end_end_end
+        weight: 0
       - path: rig/root/MCH-shoulder_rh_ns_ch.L/MCH-forearm_hose_end_p.L
         weight: 0
       - path: rig/root/MCH-shoulder_rh_ns_ch.L/MCH-forearm_hose_end_p.L/forearm_hose_end.L
@@ -566,6 +540,8 @@ ModelImporter:
       - path: rig/root/MCH-shoulder_rh_ns_ch.L/MCH-forearm_hose_end_p.L/forearm_hose_end.L/forearm_hose_end.L_end
         weight: 0
       - path: rig/root/MCH-shoulder_rh_ns_ch.L/MCH-forearm_hose_end_p.L/forearm_hose_end.L/forearm_hose_end.L_end/forearm_hose_end.L_end_end
+        weight: 0
+      - path: rig/root/MCH-shoulder_rh_ns_ch.L/MCH-forearm_hose_end_p.L/forearm_hose_end.L/forearm_hose_end.L_end/forearm_hose_end.L_end_end/forearm_hose_end.L_end_end_end
         weight: 0
       - path: rig/root/MCH-shoulder_rh_ns_ch.L/MCH-forearm_hose_p.L
         weight: 0
@@ -575,6 +551,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/MCH-shoulder_rh_ns_ch.L/MCH-forearm_hose_p.L/forearm_hose.L/forearm_hose.L_end/forearm_hose.L_end_end
         weight: 0
+      - path: rig/root/MCH-shoulder_rh_ns_ch.L/MCH-forearm_hose_p.L/forearm_hose.L/forearm_hose.L_end/forearm_hose.L_end_end/forearm_hose.L_end_end_end
+        weight: 0
       - path: rig/root/MCH-shoulder_rh_ns_ch.L/MCH-upper_arm_hose_end_p.L
         weight: 0
       - path: rig/root/MCH-shoulder_rh_ns_ch.L/MCH-upper_arm_hose_end_p.L/upper_arm_hose_end.L
@@ -583,6 +561,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/MCH-shoulder_rh_ns_ch.L/MCH-upper_arm_hose_end_p.L/upper_arm_hose_end.L/upper_arm_hose_end.L_end/upper_arm_hose_end.L_end_end
         weight: 0
+      - path: rig/root/MCH-shoulder_rh_ns_ch.L/MCH-upper_arm_hose_end_p.L/upper_arm_hose_end.L/upper_arm_hose_end.L_end/upper_arm_hose_end.L_end_end/upper_arm_hose_end.L_end_end_end
+        weight: 0
       - path: rig/root/MCH-shoulder_rh_ns_ch.L/MCH-upper_arm_hose_p.L
         weight: 0
       - path: rig/root/MCH-shoulder_rh_ns_ch.L/MCH-upper_arm_hose_p.L/upper_arm_hose.L
@@ -590,6 +570,8 @@ ModelImporter:
       - path: rig/root/MCH-shoulder_rh_ns_ch.L/MCH-upper_arm_hose_p.L/upper_arm_hose.L/upper_arm_hose.L_end
         weight: 0
       - path: rig/root/MCH-shoulder_rh_ns_ch.L/MCH-upper_arm_hose_p.L/upper_arm_hose.L/upper_arm_hose.L_end/upper_arm_hose.L_end_end
+        weight: 0
+      - path: rig/root/MCH-shoulder_rh_ns_ch.L/MCH-upper_arm_hose_p.L/upper_arm_hose.L/upper_arm_hose.L_end/upper_arm_hose.L_end_end/upper_arm_hose.L_end_end_end
         weight: 0
       - path: rig/root/MCH-shoulder_rh_ns_ch.R
         weight: 0
@@ -601,6 +583,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/MCH-shoulder_rh_ns_ch.R/MCH-elbow_hose_p.R/elbow_hose.R/elbow_hose.R_end/elbow_hose.R_end_end
         weight: 0
+      - path: rig/root/MCH-shoulder_rh_ns_ch.R/MCH-elbow_hose_p.R/elbow_hose.R/elbow_hose.R_end/elbow_hose.R_end_end/elbow_hose.R_end_end_end
+        weight: 0
       - path: rig/root/MCH-shoulder_rh_ns_ch.R/MCH-forearm_hose_end_p.R
         weight: 0
       - path: rig/root/MCH-shoulder_rh_ns_ch.R/MCH-forearm_hose_end_p.R/forearm_hose_end.R
@@ -608,6 +592,8 @@ ModelImporter:
       - path: rig/root/MCH-shoulder_rh_ns_ch.R/MCH-forearm_hose_end_p.R/forearm_hose_end.R/forearm_hose_end.R_end
         weight: 0
       - path: rig/root/MCH-shoulder_rh_ns_ch.R/MCH-forearm_hose_end_p.R/forearm_hose_end.R/forearm_hose_end.R_end/forearm_hose_end.R_end_end
+        weight: 0
+      - path: rig/root/MCH-shoulder_rh_ns_ch.R/MCH-forearm_hose_end_p.R/forearm_hose_end.R/forearm_hose_end.R_end/forearm_hose_end.R_end_end/forearm_hose_end.R_end_end_end
         weight: 0
       - path: rig/root/MCH-shoulder_rh_ns_ch.R/MCH-forearm_hose_p.R
         weight: 0
@@ -617,6 +603,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/MCH-shoulder_rh_ns_ch.R/MCH-forearm_hose_p.R/forearm_hose.R/forearm_hose.R_end/forearm_hose.R_end_end
         weight: 0
+      - path: rig/root/MCH-shoulder_rh_ns_ch.R/MCH-forearm_hose_p.R/forearm_hose.R/forearm_hose.R_end/forearm_hose.R_end_end/forearm_hose.R_end_end_end
+        weight: 0
       - path: rig/root/MCH-shoulder_rh_ns_ch.R/MCH-upper_arm_hose_end_p.R
         weight: 0
       - path: rig/root/MCH-shoulder_rh_ns_ch.R/MCH-upper_arm_hose_end_p.R/upper_arm_hose_end.R
@@ -625,6 +613,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/MCH-shoulder_rh_ns_ch.R/MCH-upper_arm_hose_end_p.R/upper_arm_hose_end.R/upper_arm_hose_end.R_end/upper_arm_hose_end.R_end_end
         weight: 0
+      - path: rig/root/MCH-shoulder_rh_ns_ch.R/MCH-upper_arm_hose_end_p.R/upper_arm_hose_end.R/upper_arm_hose_end.R_end/upper_arm_hose_end.R_end_end/upper_arm_hose_end.R_end_end_end
+        weight: 0
       - path: rig/root/MCH-shoulder_rh_ns_ch.R/MCH-upper_arm_hose_p.R
         weight: 0
       - path: rig/root/MCH-shoulder_rh_ns_ch.R/MCH-upper_arm_hose_p.R/upper_arm_hose.R
@@ -632,6 +622,8 @@ ModelImporter:
       - path: rig/root/MCH-shoulder_rh_ns_ch.R/MCH-upper_arm_hose_p.R/upper_arm_hose.R/upper_arm_hose.R_end
         weight: 0
       - path: rig/root/MCH-shoulder_rh_ns_ch.R/MCH-upper_arm_hose_p.R/upper_arm_hose.R/upper_arm_hose.R_end/upper_arm_hose.R_end_end
+        weight: 0
+      - path: rig/root/MCH-shoulder_rh_ns_ch.R/MCH-upper_arm_hose_p.R/upper_arm_hose.R/upper_arm_hose.R_end/upper_arm_hose.R_end_end/upper_arm_hose.R_end_end_end
         weight: 0
       - path: rig/root/MCH-thigh.fk.L.socket2
         weight: 0
@@ -651,6 +643,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L/MCH-thigh_antistr.fk.L/shin.fk.L/MCH-shin_antistr.fk.L/foot.fk.L/MCH-foot.L/MCH-foot.L_end/MCH-foot.L_end_end
         weight: 0
+      - path: rig/root/MCH-thigh.fk.L.socket2/thigh.fk.L/MCH-thigh_antistr.fk.L/shin.fk.L/MCH-shin_antistr.fk.L/foot.fk.L/MCH-foot.L/MCH-foot.L_end/MCH-foot.L_end_end/MCH-foot.L_end_end_end
+        weight: 0
       - path: rig/root/MCH-thigh.fk.R.socket2
         weight: 0
       - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R
@@ -668,6 +662,8 @@ ModelImporter:
       - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R/MCH-thigh_antistr.fk.R/shin.fk.R/MCH-shin_antistr.fk.R/foot.fk.R/MCH-foot.R/MCH-foot.R_end
         weight: 0
       - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R/MCH-thigh_antistr.fk.R/shin.fk.R/MCH-shin_antistr.fk.R/foot.fk.R/MCH-foot.R/MCH-foot.R_end/MCH-foot.R_end_end
+        weight: 0
+      - path: rig/root/MCH-thigh.fk.R.socket2/thigh.fk.R/MCH-thigh_antistr.fk.R/shin.fk.R/MCH-shin_antistr.fk.R/foot.fk.R/MCH-foot.R/MCH-foot.R_end/MCH-foot.R_end_end/MCH-foot.R_end_end_end
         weight: 0
       - path: rig/root/MCH-upper_arm.fk.L.socket2
         weight: 0
@@ -687,6 +683,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L/MCH-upper_arm_antistr.fk.L/forearm.fk.L/MCH-forearm_antistr.fk.L/hand.fk.L/MCH-hand.L/MCH-hand.L_end/MCH-hand.L_end_end
         weight: 0
+      - path: rig/root/MCH-upper_arm.fk.L.socket2/upper_arm.fk.L/MCH-upper_arm_antistr.fk.L/forearm.fk.L/MCH-forearm_antistr.fk.L/hand.fk.L/MCH-hand.L/MCH-hand.L_end/MCH-hand.L_end_end/MCH-hand.L_end_end_end
+        weight: 0
       - path: rig/root/MCH-upper_arm.fk.R.socket2
         weight: 0
       - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R
@@ -705,6 +703,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R/MCH-upper_arm_antistr.fk.R/forearm.fk.R/MCH-forearm_antistr.fk.R/hand.fk.R/MCH-hand.R/MCH-hand.R_end/MCH-hand.R_end_end
         weight: 0
+      - path: rig/root/MCH-upper_arm.fk.R.socket2/upper_arm.fk.R/MCH-upper_arm_antistr.fk.R/forearm.fk.R/MCH-forearm_antistr.fk.R/hand.fk.R/MCH-hand.R/MCH-hand.R_end/MCH-hand.R_end_end/MCH-hand.R_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips
         weight: 1
       - path: rig/root/ORG-hips/MCH-hips_fk_ns_intr
@@ -713,11 +713,15 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/MCH-hips_fk_ns_intr/MCH-hips_fk_ns_intr_end/MCH-hips_fk_ns_intr_end_end
         weight: 0
+      - path: rig/root/ORG-hips/MCH-hips_fk_ns_intr/MCH-hips_fk_ns_intr_end/MCH-hips_fk_ns_intr_end_end/MCH-hips_fk_ns_intr_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/MCH-hips_fk_ns_intr.001
         weight: 0
       - path: rig/root/ORG-hips/MCH-hips_fk_ns_intr.001/MCH-hips_fk_ns_intr.001_end
         weight: 0
       - path: rig/root/ORG-hips/MCH-hips_fk_ns_intr.001/MCH-hips_fk_ns_intr.001_end/MCH-hips_fk_ns_intr.001_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/MCH-hips_fk_ns_intr.001/MCH-hips_fk_ns_intr.001_end/MCH-hips_fk_ns_intr.001_end_end/MCH-hips_fk_ns_intr.001_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/MCH-hips_ik_ns_intr
         weight: 0
@@ -725,11 +729,15 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/MCH-hips_ik_ns_intr/MCH-hips_ik_ns_intr_end/MCH-hips_ik_ns_intr_end_end
         weight: 0
+      - path: rig/root/ORG-hips/MCH-hips_ik_ns_intr/MCH-hips_ik_ns_intr_end/MCH-hips_ik_ns_intr_end_end/MCH-hips_ik_ns_intr_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/MCH-hips_ik_ns_intr.001
         weight: 0
       - path: rig/root/ORG-hips/MCH-hips_ik_ns_intr.001/MCH-hips_ik_ns_intr.001_end
         weight: 0
       - path: rig/root/ORG-hips/MCH-hips_ik_ns_intr.001/MCH-hips_ik_ns_intr.001_end/MCH-hips_ik_ns_intr.001_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/MCH-hips_ik_ns_intr.001/MCH-hips_ik_ns_intr.001_end/MCH-hips_ik_ns_intr.001_end_end/MCH-hips_ik_ns_intr.001_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/MCH-hips_rh_ns_intr
         weight: 0
@@ -737,11 +745,15 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/MCH-hips_rh_ns_intr/MCH-hips_rh_ns_intr_end/MCH-hips_rh_ns_intr_end_end
         weight: 0
+      - path: rig/root/ORG-hips/MCH-hips_rh_ns_intr/MCH-hips_rh_ns_intr_end/MCH-hips_rh_ns_intr_end_end/MCH-hips_rh_ns_intr_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/MCH-hips_rh_ns_intr.001
         weight: 0
       - path: rig/root/ORG-hips/MCH-hips_rh_ns_intr.001/MCH-hips_rh_ns_intr.001_end
         weight: 0
       - path: rig/root/ORG-hips/MCH-hips_rh_ns_intr.001/MCH-hips_rh_ns_intr.001_end/MCH-hips_rh_ns_intr.001_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/MCH-hips_rh_ns_intr.001/MCH-hips_rh_ns_intr.001_end/MCH-hips_rh_ns_intr.001_end_end/MCH-hips_rh_ns_intr.001_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine
         weight: 1
@@ -755,11 +767,15 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-head.02/MCH-head.001/MCH-head.001_end/MCH-head.001_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-head.02/MCH-head.001/MCH-head.001_end/MCH-head.001_end_end/MCH-head.001_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-head.socket1
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-head.socket1/MCH-head.socket1_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-head.socket1/MCH-head.socket1_end/MCH-head.socket1_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-head.socket1/MCH-head.socket1_end/MCH-head.socket1_end_end/MCH-head.socket1_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-neck.02
         weight: 0
@@ -768,6 +784,8 @@ ModelImporter:
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-neck.02/MCH-neck/MCH-neck_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-neck.02/MCH-neck/MCH-neck_end/MCH-neck_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-neck.02/MCH-neck/MCH-neck_end/MCH-neck_end_end/MCH-neck_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-neck.follow
         weight: 0
@@ -779,6 +797,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-neck.follow/neck/MCH-neck.child/MCH-neck.child_end/MCH-neck.child_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/MCH-neck.follow/neck/MCH-neck.child/MCH-neck.child_end/MCH-neck.child_end_end/MCH-neck.child_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-neck
         weight: 1
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head
@@ -786,6 +806,8 @@ ModelImporter:
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/ORG-head_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/ORG-head_end/ORG-head_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-neck/ORG-head/ORG-head_end/ORG-head_end_end/ORG-head_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L
         weight: 1
@@ -795,17 +817,23 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/MCH-shoulder_fk_ns_intr.L/MCH-shoulder_fk_ns_intr.L_end/MCH-shoulder_fk_ns_intr.L_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/MCH-shoulder_fk_ns_intr.L/MCH-shoulder_fk_ns_intr.L_end/MCH-shoulder_fk_ns_intr.L_end_end/MCH-shoulder_fk_ns_intr.L_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/MCH-shoulder_ik_ns_intr.L
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/MCH-shoulder_ik_ns_intr.L/MCH-shoulder_ik_ns_intr.L_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/MCH-shoulder_ik_ns_intr.L/MCH-shoulder_ik_ns_intr.L_end/MCH-shoulder_ik_ns_intr.L_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/MCH-shoulder_ik_ns_intr.L/MCH-shoulder_ik_ns_intr.L_end/MCH-shoulder_ik_ns_intr.L_end_end/MCH-shoulder_ik_ns_intr.L_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/MCH-shoulder_rh_ns_intr.L
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/MCH-shoulder_rh_ns_intr.L/MCH-shoulder_rh_ns_intr.L_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/MCH-shoulder_rh_ns_intr.L/MCH-shoulder_rh_ns_intr.L_end/MCH-shoulder_rh_ns_intr.L_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/MCH-shoulder_rh_ns_intr.L/MCH-shoulder_rh_ns_intr.L_end/MCH-shoulder_rh_ns_intr.L_end_end/MCH-shoulder_rh_ns_intr.L_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L
         weight: 1
@@ -815,11 +843,15 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/MCH-forearm.junc.L/MCH-forearm.junc.L_end/MCH-forearm.junc.L_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/MCH-forearm.junc.L/MCH-forearm.junc.L_end/MCH-forearm.junc.L_end_end/MCH-forearm.junc.L_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/MCH-upper_arm_smth.02.L
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/MCH-upper_arm_smth.02.L/MCH-upper_arm_smth.02.L_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/MCH-upper_arm_smth.02.L/MCH-upper_arm_smth.02.L_end/MCH-upper_arm_smth.02.L_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/MCH-upper_arm_smth.02.L/MCH-upper_arm_smth.02.L_end/MCH-upper_arm_smth.02.L_end_end/MCH-upper_arm_smth.02.L_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L
         weight: 1
@@ -831,6 +863,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/MCH-forearm.01.L/MCH-forearm_smth.01.L/MCH-forearm_smth.01.L_end/MCH-forearm_smth.01.L_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/MCH-forearm.01.L/MCH-forearm_smth.01.L/MCH-forearm_smth.01.L_end/MCH-forearm_smth.01.L_end_end/MCH-forearm_smth.01.L_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L
         weight: 1
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/f_index.L
@@ -839,11 +873,15 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/f_index.L/f_index.L_end/f_index.L_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/f_index.L/f_index.L_end/f_index.L_end_end/f_index.L_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/f_middle.L
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/f_middle.L/f_middle.L_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/f_middle.L/f_middle.L_end/f_middle.L_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/f_middle.L/f_middle.L_end/f_middle.L_end_end/f_middle.L_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/f_pinky.L
         weight: 0
@@ -851,11 +889,15 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/f_pinky.L/f_pinky.L_end/f_pinky.L_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/f_pinky.L/f_pinky.L_end/f_pinky.L_end_end/f_pinky.L_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/f_ring.L
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/f_ring.L/f_ring.L_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/f_ring.L/f_ring.L_end/f_ring.L_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/f_ring.L/f_ring.L_end/f_ring.L_end_end/f_ring.L_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/MCH-f_index.01.L
         weight: 0
@@ -873,6 +915,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/MCH-f_index.01.L/f_index.01.L/MCH-f_index.02.L/f_index.02.L/MCH-f_index.03.L/f_index.03.L/f_index.03.L_end/f_index.03.L_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/MCH-f_index.01.L/f_index.01.L/MCH-f_index.02.L/f_index.02.L/MCH-f_index.03.L/f_index.03.L/f_index.03.L_end/f_index.03.L_end_end/f_index.03.L_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/MCH-f_middle.01.L
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/MCH-f_middle.01.L/f_middle.01.L
@@ -888,6 +932,8 @@ ModelImporter:
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/MCH-f_middle.01.L/f_middle.01.L/MCH-f_middle.02.L/f_middle.02.L/MCH-f_middle.03.L/f_middle.03.L/f_middle.03.L_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/MCH-f_middle.01.L/f_middle.01.L/MCH-f_middle.02.L/f_middle.02.L/MCH-f_middle.03.L/f_middle.03.L/f_middle.03.L_end/f_middle.03.L_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/MCH-f_middle.01.L/f_middle.01.L/MCH-f_middle.02.L/f_middle.02.L/MCH-f_middle.03.L/f_middle.03.L/f_middle.03.L_end/f_middle.03.L_end_end/f_middle.03.L_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/MCH-f_pinky.01.L
         weight: 0
@@ -905,6 +951,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/MCH-f_pinky.01.L/f_pinky.01.L/MCH-f_pinky.02.L/f_pinky.02.L/MCH-f_pinky.03.L/f_pinky.03.L/f_pinky.03.L_end/f_pinky.03.L_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/MCH-f_pinky.01.L/f_pinky.01.L/MCH-f_pinky.02.L/f_pinky.02.L/MCH-f_pinky.03.L/f_pinky.03.L/f_pinky.03.L_end/f_pinky.03.L_end_end/f_pinky.03.L_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/MCH-f_ring.01.L
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/MCH-f_ring.01.L/f_ring.01.L
@@ -920,6 +968,8 @@ ModelImporter:
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/MCH-f_ring.01.L/f_ring.01.L/MCH-f_ring.02.L/f_ring.02.L/MCH-f_ring.03.L/f_ring.03.L/f_ring.03.L_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/MCH-f_ring.01.L/f_ring.01.L/MCH-f_ring.02.L/f_ring.02.L/MCH-f_ring.03.L/f_ring.03.L/f_ring.03.L_end/f_ring.03.L_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/MCH-f_ring.01.L/f_ring.01.L/MCH-f_ring.02.L/f_ring.02.L/MCH-f_ring.03.L/f_ring.03.L/f_ring.03.L_end/f_ring.03.L_end_end/f_ring.03.L_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/MCH-thumb.01.L
         weight: 0
@@ -937,6 +987,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/MCH-thumb.01.L/thumb.01.L/MCH-thumb.02.L/thumb.02.L/MCH-thumb.03.L/thumb.03.L/thumb.03.L_end/thumb.03.L_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/MCH-thumb.01.L/thumb.01.L/MCH-thumb.02.L/thumb.02.L/MCH-thumb.03.L/thumb.03.L/thumb.03.L_end/thumb.03.L_end_end/thumb.03.L_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_index.01.L
         weight: 1
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_index.01.L/MCH-f_index.01.L.tip
@@ -944,6 +996,8 @@ ModelImporter:
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_index.01.L/MCH-f_index.01.L.tip/MCH-f_index.01.L.tip_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_index.01.L/MCH-f_index.01.L.tip/MCH-f_index.01.L.tip_end/MCH-f_index.01.L.tip_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_index.01.L/MCH-f_index.01.L.tip/MCH-f_index.01.L.tip_end/MCH-f_index.01.L.tip_end_end/MCH-f_index.01.L.tip_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_index.01.L/ORG-f_index.02.L
         weight: 1
@@ -953,6 +1007,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_index.01.L/ORG-f_index.02.L/ORG-f_index.03.L/ORG-f_index.03.L_end/ORG-f_index.03.L_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_index.01.L/ORG-f_index.02.L/ORG-f_index.03.L/ORG-f_index.03.L_end/ORG-f_index.03.L_end_end/ORG-f_index.03.L_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_middle.01.L
         weight: 1
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_middle.01.L/MCH-f_middle.01.L.tip
@@ -960,6 +1016,8 @@ ModelImporter:
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_middle.01.L/MCH-f_middle.01.L.tip/MCH-f_middle.01.L.tip_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_middle.01.L/MCH-f_middle.01.L.tip/MCH-f_middle.01.L.tip_end/MCH-f_middle.01.L.tip_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_middle.01.L/MCH-f_middle.01.L.tip/MCH-f_middle.01.L.tip_end/MCH-f_middle.01.L.tip_end_end/MCH-f_middle.01.L.tip_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_middle.01.L/ORG-f_middle.02.L
         weight: 1
@@ -969,6 +1027,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_middle.01.L/ORG-f_middle.02.L/ORG-f_middle.03.L/ORG-f_middle.03.L_end/ORG-f_middle.03.L_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_middle.01.L/ORG-f_middle.02.L/ORG-f_middle.03.L/ORG-f_middle.03.L_end/ORG-f_middle.03.L_end_end/ORG-f_middle.03.L_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_pinky.01.L
         weight: 1
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_pinky.01.L/MCH-f_pinky.01.L.tip
@@ -976,6 +1036,8 @@ ModelImporter:
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_pinky.01.L/MCH-f_pinky.01.L.tip/MCH-f_pinky.01.L.tip_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_pinky.01.L/MCH-f_pinky.01.L.tip/MCH-f_pinky.01.L.tip_end/MCH-f_pinky.01.L.tip_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_pinky.01.L/MCH-f_pinky.01.L.tip/MCH-f_pinky.01.L.tip_end/MCH-f_pinky.01.L.tip_end_end/MCH-f_pinky.01.L.tip_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_pinky.01.L/ORG-f_pinky.02.L
         weight: 1
@@ -985,6 +1047,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_pinky.01.L/ORG-f_pinky.02.L/ORG-f_pinky.03.L/ORG-f_pinky.03.L_end/ORG-f_pinky.03.L_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_pinky.01.L/ORG-f_pinky.02.L/ORG-f_pinky.03.L/ORG-f_pinky.03.L_end/ORG-f_pinky.03.L_end_end/ORG-f_pinky.03.L_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_ring.01.L
         weight: 1
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_ring.01.L/MCH-f_ring.01.L.tip
@@ -992,6 +1056,8 @@ ModelImporter:
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_ring.01.L/MCH-f_ring.01.L.tip/MCH-f_ring.01.L.tip_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_ring.01.L/MCH-f_ring.01.L.tip/MCH-f_ring.01.L.tip_end/MCH-f_ring.01.L.tip_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_ring.01.L/MCH-f_ring.01.L.tip/MCH-f_ring.01.L.tip_end/MCH-f_ring.01.L.tip_end_end/MCH-f_ring.01.L.tip_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_ring.01.L/ORG-f_ring.02.L
         weight: 1
@@ -1001,6 +1067,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_ring.01.L/ORG-f_ring.02.L/ORG-f_ring.03.L/ORG-f_ring.03.L_end/ORG-f_ring.03.L_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-f_ring.01.L/ORG-f_ring.02.L/ORG-f_ring.03.L/ORG-f_ring.03.L_end/ORG-f_ring.03.L_end_end/ORG-f_ring.03.L_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-thumb.01.L
         weight: 1
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-thumb.01.L/MCH-thumb.01.L.tip
@@ -1008,6 +1076,8 @@ ModelImporter:
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-thumb.01.L/MCH-thumb.01.L.tip/MCH-thumb.01.L.tip_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-thumb.01.L/MCH-thumb.01.L.tip/MCH-thumb.01.L.tip_end/MCH-thumb.01.L.tip_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-thumb.01.L/MCH-thumb.01.L.tip/MCH-thumb.01.L.tip_end/MCH-thumb.01.L.tip_end_end/MCH-thumb.01.L.tip_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-thumb.01.L/ORG-thumb.02.L
         weight: 1
@@ -1017,17 +1087,23 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-thumb.01.L/ORG-thumb.02.L/ORG-thumb.03.L/ORG-thumb.03.L_end/ORG-thumb.03.L_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/ORG-thumb.01.L/ORG-thumb.02.L/ORG-thumb.03.L/ORG-thumb.03.L_end/ORG-thumb.03.L_end_end/ORG-thumb.03.L_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/palm.L
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/palm.L/palm.L_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/palm.L/palm.L_end/palm.L_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/palm.L/palm.L_end/palm.L_end_end/palm.L_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/thumb.L
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/thumb.L/thumb.L_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/thumb.L/thumb.L_end/thumb.L_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.L/ORG-upper_arm.L/ORG-forearm.L/ORG-hand.L/thumb.L/thumb.L_end/thumb.L_end_end/thumb.L_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R
         weight: 1
@@ -1037,17 +1113,23 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/MCH-shoulder_fk_ns_intr.R/MCH-shoulder_fk_ns_intr.R_end/MCH-shoulder_fk_ns_intr.R_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/MCH-shoulder_fk_ns_intr.R/MCH-shoulder_fk_ns_intr.R_end/MCH-shoulder_fk_ns_intr.R_end_end/MCH-shoulder_fk_ns_intr.R_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/MCH-shoulder_ik_ns_intr.R
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/MCH-shoulder_ik_ns_intr.R/MCH-shoulder_ik_ns_intr.R_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/MCH-shoulder_ik_ns_intr.R/MCH-shoulder_ik_ns_intr.R_end/MCH-shoulder_ik_ns_intr.R_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/MCH-shoulder_ik_ns_intr.R/MCH-shoulder_ik_ns_intr.R_end/MCH-shoulder_ik_ns_intr.R_end_end/MCH-shoulder_ik_ns_intr.R_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/MCH-shoulder_rh_ns_intr.R
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/MCH-shoulder_rh_ns_intr.R/MCH-shoulder_rh_ns_intr.R_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/MCH-shoulder_rh_ns_intr.R/MCH-shoulder_rh_ns_intr.R_end/MCH-shoulder_rh_ns_intr.R_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/MCH-shoulder_rh_ns_intr.R/MCH-shoulder_rh_ns_intr.R_end/MCH-shoulder_rh_ns_intr.R_end_end/MCH-shoulder_rh_ns_intr.R_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R
         weight: 1
@@ -1057,11 +1139,15 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/MCH-forearm.junc.R/MCH-forearm.junc.R_end/MCH-forearm.junc.R_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/MCH-forearm.junc.R/MCH-forearm.junc.R_end/MCH-forearm.junc.R_end_end/MCH-forearm.junc.R_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/MCH-upper_arm_smth.02.R
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/MCH-upper_arm_smth.02.R/MCH-upper_arm_smth.02.R_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/MCH-upper_arm_smth.02.R/MCH-upper_arm_smth.02.R_end/MCH-upper_arm_smth.02.R_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/MCH-upper_arm_smth.02.R/MCH-upper_arm_smth.02.R_end/MCH-upper_arm_smth.02.R_end_end/MCH-upper_arm_smth.02.R_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R
         weight: 1
@@ -1073,6 +1159,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/MCH-forearm.01.R/MCH-forearm_smth.01.R/MCH-forearm_smth.01.R_end/MCH-forearm_smth.01.R_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/MCH-forearm.01.R/MCH-forearm_smth.01.R/MCH-forearm_smth.01.R_end/MCH-forearm_smth.01.R_end_end/MCH-forearm_smth.01.R_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R
         weight: 1
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/f_index.R
@@ -1081,11 +1169,15 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/f_index.R/f_index.R_end/f_index.R_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/f_index.R/f_index.R_end/f_index.R_end_end/f_index.R_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/f_middle.R
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/f_middle.R/f_middle.R_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/f_middle.R/f_middle.R_end/f_middle.R_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/f_middle.R/f_middle.R_end/f_middle.R_end_end/f_middle.R_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/f_pinky.R
         weight: 0
@@ -1093,11 +1185,15 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/f_pinky.R/f_pinky.R_end/f_pinky.R_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/f_pinky.R/f_pinky.R_end/f_pinky.R_end_end/f_pinky.R_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/f_ring.R
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/f_ring.R/f_ring.R_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/f_ring.R/f_ring.R_end/f_ring.R_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/f_ring.R/f_ring.R_end/f_ring.R_end_end/f_ring.R_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/MCH-f_index.01.R
         weight: 0
@@ -1115,6 +1211,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/MCH-f_index.01.R/f_index.01.R/MCH-f_index.02.R/f_index.02.R/MCH-f_index.03.R/f_index.03.R/f_index.03.R_end/f_index.03.R_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/MCH-f_index.01.R/f_index.01.R/MCH-f_index.02.R/f_index.02.R/MCH-f_index.03.R/f_index.03.R/f_index.03.R_end/f_index.03.R_end_end/f_index.03.R_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/MCH-f_middle.01.R
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/MCH-f_middle.01.R/f_middle.01.R
@@ -1130,6 +1228,8 @@ ModelImporter:
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/MCH-f_middle.01.R/f_middle.01.R/MCH-f_middle.02.R/f_middle.02.R/MCH-f_middle.03.R/f_middle.03.R/f_middle.03.R_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/MCH-f_middle.01.R/f_middle.01.R/MCH-f_middle.02.R/f_middle.02.R/MCH-f_middle.03.R/f_middle.03.R/f_middle.03.R_end/f_middle.03.R_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/MCH-f_middle.01.R/f_middle.01.R/MCH-f_middle.02.R/f_middle.02.R/MCH-f_middle.03.R/f_middle.03.R/f_middle.03.R_end/f_middle.03.R_end_end/f_middle.03.R_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/MCH-f_pinky.01.R
         weight: 0
@@ -1147,6 +1247,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/MCH-f_pinky.01.R/f_pinky.01.R/MCH-f_pinky.02.R/f_pinky.02.R/MCH-f_pinky.03.R/f_pinky.03.R/f_pinky.03.R_end/f_pinky.03.R_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/MCH-f_pinky.01.R/f_pinky.01.R/MCH-f_pinky.02.R/f_pinky.02.R/MCH-f_pinky.03.R/f_pinky.03.R/f_pinky.03.R_end/f_pinky.03.R_end_end/f_pinky.03.R_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/MCH-f_ring.01.R
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/MCH-f_ring.01.R/f_ring.01.R
@@ -1162,6 +1264,8 @@ ModelImporter:
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/MCH-f_ring.01.R/f_ring.01.R/MCH-f_ring.02.R/f_ring.02.R/MCH-f_ring.03.R/f_ring.03.R/f_ring.03.R_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/MCH-f_ring.01.R/f_ring.01.R/MCH-f_ring.02.R/f_ring.02.R/MCH-f_ring.03.R/f_ring.03.R/f_ring.03.R_end/f_ring.03.R_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/MCH-f_ring.01.R/f_ring.01.R/MCH-f_ring.02.R/f_ring.02.R/MCH-f_ring.03.R/f_ring.03.R/f_ring.03.R_end/f_ring.03.R_end_end/f_ring.03.R_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/MCH-thumb.01.R
         weight: 0
@@ -1179,6 +1283,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/MCH-thumb.01.R/thumb.01.R/MCH-thumb.02.R/thumb.02.R/MCH-thumb.03.R/thumb.03.R/thumb.03.R_end/thumb.03.R_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/MCH-thumb.01.R/thumb.01.R/MCH-thumb.02.R/thumb.02.R/MCH-thumb.03.R/thumb.03.R/thumb.03.R_end/thumb.03.R_end_end/thumb.03.R_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_index.01.R
         weight: 1
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_index.01.R/MCH-f_index.01.R.tip
@@ -1186,6 +1292,8 @@ ModelImporter:
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_index.01.R/MCH-f_index.01.R.tip/MCH-f_index.01.R.tip_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_index.01.R/MCH-f_index.01.R.tip/MCH-f_index.01.R.tip_end/MCH-f_index.01.R.tip_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_index.01.R/MCH-f_index.01.R.tip/MCH-f_index.01.R.tip_end/MCH-f_index.01.R.tip_end_end/MCH-f_index.01.R.tip_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_index.01.R/ORG-f_index.02.R
         weight: 1
@@ -1195,6 +1303,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_index.01.R/ORG-f_index.02.R/ORG-f_index.03.R/ORG-f_index.03.R_end/ORG-f_index.03.R_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_index.01.R/ORG-f_index.02.R/ORG-f_index.03.R/ORG-f_index.03.R_end/ORG-f_index.03.R_end_end/ORG-f_index.03.R_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_middle.01.R
         weight: 1
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_middle.01.R/MCH-f_middle.01.R.tip
@@ -1202,6 +1312,8 @@ ModelImporter:
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_middle.01.R/MCH-f_middle.01.R.tip/MCH-f_middle.01.R.tip_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_middle.01.R/MCH-f_middle.01.R.tip/MCH-f_middle.01.R.tip_end/MCH-f_middle.01.R.tip_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_middle.01.R/MCH-f_middle.01.R.tip/MCH-f_middle.01.R.tip_end/MCH-f_middle.01.R.tip_end_end/MCH-f_middle.01.R.tip_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_middle.01.R/ORG-f_middle.02.R
         weight: 1
@@ -1211,6 +1323,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_middle.01.R/ORG-f_middle.02.R/ORG-f_middle.03.R/ORG-f_middle.03.R_end/ORG-f_middle.03.R_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_middle.01.R/ORG-f_middle.02.R/ORG-f_middle.03.R/ORG-f_middle.03.R_end/ORG-f_middle.03.R_end_end/ORG-f_middle.03.R_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_pinky.01.R
         weight: 1
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_pinky.01.R/MCH-f_pinky.01.R.tip
@@ -1218,6 +1332,8 @@ ModelImporter:
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_pinky.01.R/MCH-f_pinky.01.R.tip/MCH-f_pinky.01.R.tip_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_pinky.01.R/MCH-f_pinky.01.R.tip/MCH-f_pinky.01.R.tip_end/MCH-f_pinky.01.R.tip_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_pinky.01.R/MCH-f_pinky.01.R.tip/MCH-f_pinky.01.R.tip_end/MCH-f_pinky.01.R.tip_end_end/MCH-f_pinky.01.R.tip_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_pinky.01.R/ORG-f_pinky.02.R
         weight: 1
@@ -1227,6 +1343,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_pinky.01.R/ORG-f_pinky.02.R/ORG-f_pinky.03.R/ORG-f_pinky.03.R_end/ORG-f_pinky.03.R_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_pinky.01.R/ORG-f_pinky.02.R/ORG-f_pinky.03.R/ORG-f_pinky.03.R_end/ORG-f_pinky.03.R_end_end/ORG-f_pinky.03.R_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_ring.01.R
         weight: 1
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_ring.01.R/MCH-f_ring.01.R.tip
@@ -1234,6 +1352,8 @@ ModelImporter:
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_ring.01.R/MCH-f_ring.01.R.tip/MCH-f_ring.01.R.tip_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_ring.01.R/MCH-f_ring.01.R.tip/MCH-f_ring.01.R.tip_end/MCH-f_ring.01.R.tip_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_ring.01.R/MCH-f_ring.01.R.tip/MCH-f_ring.01.R.tip_end/MCH-f_ring.01.R.tip_end_end/MCH-f_ring.01.R.tip_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_ring.01.R/ORG-f_ring.02.R
         weight: 1
@@ -1243,6 +1363,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_ring.01.R/ORG-f_ring.02.R/ORG-f_ring.03.R/ORG-f_ring.03.R_end/ORG-f_ring.03.R_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-f_ring.01.R/ORG-f_ring.02.R/ORG-f_ring.03.R/ORG-f_ring.03.R_end/ORG-f_ring.03.R_end_end/ORG-f_ring.03.R_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-thumb.01.R
         weight: 1
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-thumb.01.R/MCH-thumb.01.R.tip
@@ -1250,6 +1372,8 @@ ModelImporter:
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-thumb.01.R/MCH-thumb.01.R.tip/MCH-thumb.01.R.tip_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-thumb.01.R/MCH-thumb.01.R.tip/MCH-thumb.01.R.tip_end/MCH-thumb.01.R.tip_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-thumb.01.R/MCH-thumb.01.R.tip/MCH-thumb.01.R.tip_end/MCH-thumb.01.R.tip_end_end/MCH-thumb.01.R.tip_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-thumb.01.R/ORG-thumb.02.R
         weight: 1
@@ -1259,11 +1383,15 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-thumb.01.R/ORG-thumb.02.R/ORG-thumb.03.R/ORG-thumb.03.R_end/ORG-thumb.03.R_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/ORG-thumb.01.R/ORG-thumb.02.R/ORG-thumb.03.R/ORG-thumb.03.R_end/ORG-thumb.03.R_end_end/ORG-thumb.03.R_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/palm.R
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/palm.R/palm.R_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/palm.R/palm.R_end/palm.R_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/palm.R/palm.R_end/palm.R_end_end/palm.R_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/thumb.R
         weight: 0
@@ -1271,17 +1399,23 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/thumb.R/thumb.R_end/thumb.R_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/ORG-shoulder.R/ORG-upper_arm.R/ORG-forearm.R/ORG-hand.R/thumb.R/thumb.R_end/thumb.R_end_end/thumb.R_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/shoulder.L
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/shoulder.L/shoulder.L_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/shoulder.L/shoulder.L_end/shoulder.L_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/shoulder.L/shoulder.L_end/shoulder.L_end_end/shoulder.L_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/shoulder.R
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/shoulder.R/shoulder.R_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-spine/ORG-chest/shoulder.R/shoulder.R_end/shoulder.R_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-spine/ORG-chest/shoulder.R/shoulder.R_end/shoulder.R_end_end/shoulder.R_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-thigh.L
         weight: 1
@@ -1291,11 +1425,15 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-thigh.L/MCH-shin.junc.L/MCH-shin.junc.L_end/MCH-shin.junc.L_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-thigh.L/MCH-shin.junc.L/MCH-shin.junc.L_end/MCH-shin.junc.L_end_end/MCH-shin.junc.L_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-thigh.L/MCH-thigh_smth.02.L
         weight: 0
       - path: rig/root/ORG-hips/ORG-thigh.L/MCH-thigh_smth.02.L/MCH-thigh_smth.02.L_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-thigh.L/MCH-thigh_smth.02.L/MCH-thigh_smth.02.L_end/MCH-thigh_smth.02.L_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-thigh.L/MCH-thigh_smth.02.L/MCH-thigh_smth.02.L_end/MCH-thigh_smth.02.L_end_end/MCH-thigh_smth.02.L_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L
         weight: 1
@@ -1307,6 +1445,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/MCH-shin.01.L/MCH-shin_smth.01.L/MCH-shin_smth.01.L_end/MCH-shin_smth.01.L_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/MCH-shin.01.L/MCH-shin_smth.01.L/MCH-shin_smth.01.L_end/MCH-shin_smth.01.L_end_end/MCH-shin_smth.01.L_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L
         weight: 1
       - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/MCH-toe.L.socket2
@@ -1315,11 +1455,15 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/MCH-toe.L.socket2/MCH-toe.L.socket2_end/MCH-toe.L.socket2_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/MCH-toe.L.socket2/MCH-toe.L.socket2_end/MCH-toe.L.socket2_end_end/MCH-toe.L.socket2_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/ORG-toe.L
         weight: 1
       - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/ORG-toe.L/ORG-toe.L_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/ORG-toe.L/ORG-toe.L_end/ORG-toe.L_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-foot.L/ORG-toe.L/ORG-toe.L_end/ORG-toe.L_end_end/ORG-toe.L_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-heel.L
         weight: 0
@@ -1329,6 +1473,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-heel.L/ORG-heel.02.L/ORG-heel.02.L_end/ORG-heel.02.L_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-thigh.L/ORG-shin.L/ORG-heel.L/ORG-heel.02.L/ORG-heel.02.L_end/ORG-heel.02.L_end_end/ORG-heel.02.L_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-thigh.R
         weight: 1
       - path: rig/root/ORG-hips/ORG-thigh.R/MCH-shin.junc.R
@@ -1337,11 +1483,15 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-thigh.R/MCH-shin.junc.R/MCH-shin.junc.R_end/MCH-shin.junc.R_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-thigh.R/MCH-shin.junc.R/MCH-shin.junc.R_end/MCH-shin.junc.R_end_end/MCH-shin.junc.R_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-thigh.R/MCH-thigh_smth.02.R
         weight: 0
       - path: rig/root/ORG-hips/ORG-thigh.R/MCH-thigh_smth.02.R/MCH-thigh_smth.02.R_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-thigh.R/MCH-thigh_smth.02.R/MCH-thigh_smth.02.R_end/MCH-thigh_smth.02.R_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-thigh.R/MCH-thigh_smth.02.R/MCH-thigh_smth.02.R_end/MCH-thigh_smth.02.R_end_end/MCH-thigh_smth.02.R_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R
         weight: 1
@@ -1353,6 +1503,8 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/MCH-shin.01.R/MCH-shin_smth.01.R/MCH-shin_smth.01.R_end/MCH-shin_smth.01.R_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/MCH-shin.01.R/MCH-shin_smth.01.R/MCH-shin_smth.01.R_end/MCH-shin_smth.01.R_end_end/MCH-shin_smth.01.R_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R
         weight: 1
       - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/MCH-toe.R.socket2
@@ -1361,11 +1513,15 @@ ModelImporter:
         weight: 0
       - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/MCH-toe.R.socket2/MCH-toe.R.socket2_end/MCH-toe.R.socket2_end_end
         weight: 0
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/MCH-toe.R.socket2/MCH-toe.R.socket2_end/MCH-toe.R.socket2_end_end/MCH-toe.R.socket2_end_end_end
+        weight: 0
       - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/ORG-toe.R
         weight: 1
       - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/ORG-toe.R/ORG-toe.R_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/ORG-toe.R/ORG-toe.R_end/ORG-toe.R_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-foot.R/ORG-toe.R/ORG-toe.R_end/ORG-toe.R_end_end/ORG-toe.R_end_end_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-heel.R
         weight: 0
@@ -1374,6 +1530,8 @@ ModelImporter:
       - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-heel.R/ORG-heel.02.R/ORG-heel.02.R_end
         weight: 0
       - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-heel.R/ORG-heel.02.R/ORG-heel.02.R_end/ORG-heel.02.R_end_end
+        weight: 0
+      - path: rig/root/ORG-hips/ORG-thigh.R/ORG-shin.R/ORG-heel.R/ORG-heel.02.R/ORG-heel.02.R_end/ORG-heel.02.R_end_end/ORG-heel.02.R_end_end_end
         weight: 0
       - path: rig/root/torso
         weight: 0
@@ -1384,6 +1542,8 @@ ModelImporter:
       - path: rig/root/torso/chest/MCH-sub_chest/MCH-sub_chest_end
         weight: 0
       - path: rig/root/torso/chest/MCH-sub_chest/MCH-sub_chest_end/MCH-sub_chest_end_end
+        weight: 0
+      - path: rig/root/torso/chest/MCH-sub_chest/MCH-sub_chest_end/MCH-sub_chest_end_end/MCH-sub_chest_end_end_end
         weight: 0
       - path: rig/root/torso/hips
         weight: 0
@@ -1396,6 +1556,8 @@ ModelImporter:
       - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-hips.reverse/MCH-hips.reverse_end
         weight: 0
       - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-hips.reverse/MCH-hips.reverse_end/MCH-hips.reverse_end_end
+        weight: 0
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-hips.reverse/MCH-hips.reverse_end/MCH-hips.reverse_end_end/MCH-hips.reverse_end_end_end
         weight: 0
       - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s
         weight: 0
@@ -1411,17 +1573,23 @@ ModelImporter:
         weight: 0
       - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-chest.flex_s/MCH-chest.flex/MCH-chest.reverse/MCH-chest.reverse_end/MCH-chest.reverse_end_end
         weight: 0
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-chest.flex_s/MCH-chest.flex/MCH-chest.reverse/MCH-chest.reverse_end/MCH-chest.reverse_end_end/MCH-chest.reverse_end_end_end
+        weight: 0
       - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-spine.reverse
         weight: 0
       - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-spine.reverse/MCH-spine.reverse_end
         weight: 0
       - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-spine.reverse/MCH-spine.reverse_end/MCH-spine.reverse_end_end
         weight: 0
+      - path: rig/root/torso/hips/MCH-hips.flex_s/MCH-hips.flex/MCH-spine.flex_s/MCH-spine.flex/MCH-spine.reverse/MCH-spine.reverse_end/MCH-spine.reverse_end_end/MCH-spine.reverse_end_end_end
+        weight: 0
       - path: rig/root/torso/hips/MCH-sub_hips
         weight: 0
       - path: rig/root/torso/hips/MCH-sub_hips/MCH-sub_hips_end
         weight: 0
       - path: rig/root/torso/hips/MCH-sub_hips/MCH-sub_hips_end/MCH-sub_hips_end_end
+        weight: 0
+      - path: rig/root/torso/hips/MCH-sub_hips/MCH-sub_hips_end/MCH-sub_hips_end_end/MCH-sub_hips_end_end_end
         weight: 0
       - path: rig/root/torso/MCH-par_spine
         weight: 0
@@ -1433,11 +1601,15 @@ ModelImporter:
         weight: 0
       - path: rig/root/torso/MCH-par_spine/spine/MCH-sub_spine/MCH-sub_spine_end/MCH-sub_spine_end_end
         weight: 0
+      - path: rig/root/torso/MCH-par_spine/spine/MCH-sub_spine/MCH-sub_spine_end/MCH-sub_spine_end_end/MCH-sub_spine_end_end_end
+        weight: 0
       - path: rig/root/VIS-foot.ik.L
         weight: 0
       - path: rig/root/VIS-foot.ik.L/VIS-foot.ik.L_end
         weight: 0
       - path: rig/root/VIS-foot.ik.L/VIS-foot.ik.L_end/VIS-foot.ik.L_end_end
+        weight: 0
+      - path: rig/root/VIS-foot.ik.L/VIS-foot.ik.L_end/VIS-foot.ik.L_end_end/VIS-foot.ik.L_end_end_end
         weight: 0
       - path: rig/root/VIS-foot.ik.R
         weight: 0
@@ -1445,11 +1617,15 @@ ModelImporter:
         weight: 0
       - path: rig/root/VIS-foot.ik.R/VIS-foot.ik.R_end/VIS-foot.ik.R_end_end
         weight: 0
+      - path: rig/root/VIS-foot.ik.R/VIS-foot.ik.R_end/VIS-foot.ik.R_end_end/VIS-foot.ik.R_end_end_end
+        weight: 0
       - path: rig/root/VIS-hand.ik.L
         weight: 0
       - path: rig/root/VIS-hand.ik.L/VIS-hand.ik.L_end
         weight: 0
       - path: rig/root/VIS-hand.ik.L/VIS-hand.ik.L_end/VIS-hand.ik.L_end_end
+        weight: 0
+      - path: rig/root/VIS-hand.ik.L/VIS-hand.ik.L_end/VIS-hand.ik.L_end_end/VIS-hand.ik.L_end_end_end
         weight: 0
       - path: rig/root/VIS-hand.ik.R
         weight: 0
@@ -1457,11 +1633,15 @@ ModelImporter:
         weight: 0
       - path: rig/root/VIS-hand.ik.R/VIS-hand.ik.R_end/VIS-hand.ik.R_end_end
         weight: 0
+      - path: rig/root/VIS-hand.ik.R/VIS-hand.ik.R_end/VIS-hand.ik.R_end_end/VIS-hand.ik.R_end_end_end
+        weight: 0
       - path: rig/root/VIS-thigh_pole.ik.L
         weight: 0
       - path: rig/root/VIS-thigh_pole.ik.L/VIS-thigh_pole.ik.L_end
         weight: 0
       - path: rig/root/VIS-thigh_pole.ik.L/VIS-thigh_pole.ik.L_end/VIS-thigh_pole.ik.L_end_end
+        weight: 0
+      - path: rig/root/VIS-thigh_pole.ik.L/VIS-thigh_pole.ik.L_end/VIS-thigh_pole.ik.L_end_end/VIS-thigh_pole.ik.L_end_end_end
         weight: 0
       - path: rig/root/VIS-thigh_pole.ik.R
         weight: 0
@@ -1469,17 +1649,23 @@ ModelImporter:
         weight: 0
       - path: rig/root/VIS-thigh_pole.ik.R/VIS-thigh_pole.ik.R_end/VIS-thigh_pole.ik.R_end_end
         weight: 0
+      - path: rig/root/VIS-thigh_pole.ik.R/VIS-thigh_pole.ik.R_end/VIS-thigh_pole.ik.R_end_end/VIS-thigh_pole.ik.R_end_end_end
+        weight: 0
       - path: rig/root/VIS-upper_arm_pole.ik.L
         weight: 0
       - path: rig/root/VIS-upper_arm_pole.ik.L/VIS-upper_arm_pole.ik.L_end
         weight: 0
       - path: rig/root/VIS-upper_arm_pole.ik.L/VIS-upper_arm_pole.ik.L_end/VIS-upper_arm_pole.ik.L_end_end
         weight: 0
+      - path: rig/root/VIS-upper_arm_pole.ik.L/VIS-upper_arm_pole.ik.L_end/VIS-upper_arm_pole.ik.L_end_end/VIS-upper_arm_pole.ik.L_end_end_end
+        weight: 0
       - path: rig/root/VIS-upper_arm_pole.ik.R
         weight: 0
       - path: rig/root/VIS-upper_arm_pole.ik.R/VIS-upper_arm_pole.ik.R_end
         weight: 0
       - path: rig/root/VIS-upper_arm_pole.ik.R/VIS-upper_arm_pole.ik.R_end/VIS-upper_arm_pole.ik.R_end_end
+        weight: 0
+      - path: rig/root/VIS-upper_arm_pole.ik.R/VIS-upper_arm_pole.ik.R_end/VIS-upper_arm_pole.ik.R_end_end/VIS-upper_arm_pole.ik.R_end_end_end
         weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
@@ -1508,7 +1694,7 @@ ModelImporter:
     skinWeightsMode: 0
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
-    optimizeBones: 1
+    optimizeBones: 0
     meshOptimizationFlags: -1
     indexFormat: 1
     secondaryUVAngleDistortion: 8
@@ -1522,7 +1708,7 @@ ModelImporter:
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
-    tangentImportMode: 2
+    tangentImportMode: 3
     normalCalculationMode: 0
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
     blendShapeNormalImportMode: 1
