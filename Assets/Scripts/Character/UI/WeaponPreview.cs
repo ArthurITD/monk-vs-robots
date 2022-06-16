@@ -5,6 +5,7 @@ using DG.Tweening;
 public class WeaponPreview : MonoBehaviour
 {
     [SerializeField] private TipMaterialEnumGameObjectDictionary tipTypes;
+    [SerializeField] private ElementEnumGameObjectDictionary elementTypes;
     [SerializeField] private Material spearShaftMaterial;
     [SerializeField] private Transform rootTransform;
     [SerializeField] private Vector3 rotateTo;
@@ -13,6 +14,7 @@ public class WeaponPreview : MonoBehaviour
     [SerializeField] private float moveY;
 
     private TipMaterialEnum currentTipMaterial;
+    private ElementEnum element;
 
     private void Start()
     {
@@ -35,5 +37,13 @@ public class WeaponPreview : MonoBehaviour
         {
             spearShaftMaterial.color = shaftColor;
         }
+    }
+
+    public void ApplySpearElement(ElementEnum elementToSet)
+    {
+        elementTypes[element].SetActive(false);
+        element = elementToSet;
+
+        elementTypes[elementToSet].SetActive(true);
     }
 }

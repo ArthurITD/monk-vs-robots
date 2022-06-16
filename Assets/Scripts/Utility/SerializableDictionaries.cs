@@ -14,3 +14,7 @@ public class HairStyleEnumGameObjectDictionary : SerializableDictionary<HairStyl
 [Serializable]
 public class CharacterTypeGameObjectDictionary : SerializableDictionary<CharacterType, GameObject>
 { }
+
+[Serializable]
+public class ElementEnumGameObjectDictionary : SerializableDictionary<ElementEnum, GameObject>
+{ }

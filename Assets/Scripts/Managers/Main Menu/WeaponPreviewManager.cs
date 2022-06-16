@@ -11,5 +11,6 @@ public class WeaponPreviewManager : MonoBehaviour
     {
         currentWeaponPreview.ApplyShaftColor(totemWeapon.shaftColor);
         currentWeaponPreview.ApplyTipMaterial(totemWeapon.tipMaterial);
+        currentWeaponPreview.ApplySpearElement(totemWeapon.element);
     }
 }
