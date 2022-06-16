@@ -20,6 +20,7 @@ public class SpearWeapon : MonoBehaviour
     [SerializeField] private float pickupDelay;
     [SerializeField] private HitDetector weaponHitDetector;
     [SerializeField] private Collider spearTipCollider;
+    [SerializeField] private ElementEnumGameObjectDictionary elementTypes;
 
     private TipMaterialEnum tipMaterial;
     private ElementEnum element;
@@ -54,7 +55,7 @@ public class SpearWeapon : MonoBehaviour
         spearRangedController.throwingForce = spear.range;
 
         //To Do: assign attack buf\debuf depending on element
-        element = spear.element;
+        SetSpearElement(spear.element);
         spearShaftMaterial.color = spear.shaftColor;
 
         parentRoot = transform.parent;
@@ -67,8 +68,15 @@ public class SpearWeapon : MonoBehaviour
         tipTypes[tipMaterial].SetActive(false);
         tipMaterial = tipMaterialToSet;
 
-        var newTip = tipTypes[tipMaterial];
-        newTip.SetActive(true);
+        tipTypes[tipMaterial].SetActive(true);
+    }
+
+    private void SetSpearElement(ElementEnum elementToSet)
+    {
+        elementTypes[element].SetActive(false);
+        element = elementToSet;
+
+        elementTypes[elementToSet].SetActive(true);
     }
 
     private void EnableHitCollider(bool isEnabled)
