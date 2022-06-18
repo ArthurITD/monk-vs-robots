@@ -795,9 +795,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 422
+    x: 339
     y: 73
-    width: 872
+    width: 1018
     height: 631
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1152,9 +1152,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1296
+    x: 1280
     y: 73
-    width: 623
+    width: 639
     height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:

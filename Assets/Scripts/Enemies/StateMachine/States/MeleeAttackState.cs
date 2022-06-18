@@ -1,3 +1,4 @@
+using Opsive.Shared.Events;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -29,7 +30,7 @@ public class MeleeAttackState : BaseState
 
     private IEnumerator MeleeAttack()
     {
-        animator.SetTrigger(Constants.MELEE_ATTACK_ANIMATION_TRIGGER);
+        //Wait for the attack preparation
         yield return new WaitForSeconds(GetCurentAnimatonLength());
 
         meleeAttackCollider.enabled = true;
@@ -54,10 +55,8 @@ public class MeleeAttackState : BaseState
 
             if (isTargetInRange && !isOnCooldown)
             {
-                IsCompleted = false;
                 isAttacking = true;
-                isRotating = false;
-                StartCoroutine(MeleeAttack());
+                animator.SetTrigger(Constants.MELEE_ATTACK_ANIMATION_TRIGGER);
             }
             else if (!isTargetInRange)
             {
@@ -90,6 +89,13 @@ public class MeleeAttackState : BaseState
         isOnCooldown = true;
         yield return new WaitForSeconds(delayBetweenAttacks);
         isOnCooldown = false;
+    }
+
+    private void OnMeleeAttackPreparation()
+    {
+        IsCompleted = false;
+        isRotating = false;
+        StartCoroutine(MeleeAttack());
     }
 
     protected override void OnDisable()

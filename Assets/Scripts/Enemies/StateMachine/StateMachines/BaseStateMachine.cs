@@ -115,7 +115,9 @@ public class BaseStateMachine : MonoBehaviour
     }
 
     public void ActivateStartState()
-    {
+    { 
+        robotAnimator.enabled = false;
+        robotAnimator.enabled = true;
         ActivateState(startState);
         isStateMachineRunning = true;
     }

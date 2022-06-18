@@ -41,6 +41,7 @@ public class BaseState : MonoBehaviour
     protected float GetCurentAnimatonLength()
     {
         var currentStateInfo = animator.GetCurrentAnimatorStateInfo(0);
+        var animatorClips = animator.GetCurrentAnimatorClipInfo(0);
         return currentStateInfo.length;
     }
 }
