@@ -2,52 +2,80 @@ Shader "Custom/UnlitReceiveShadows"
 {
     Properties
     {
-        _Color ("Color", Color) = (1,1,1,1)
-        _MainTex ("Albedo (RGB)", 2D) = "white" {}
-        _Glossiness ("Smoothness", Range(0,1)) = 0.5
-        _Metallic ("Metallic", Range(0,1)) = 0.0
+        [MainColor] _BaseColor("BaseColor", Color) = (1,1,1,1)
+        [MainTexture] _BaseMap("BaseMap", 2D) = "white" {}
     }
-    SubShader
+
+        SubShader
     {
-        Tags { "RenderType"="Opaque" }
-        LOD 200
+        Tags { "RenderType" = "Opaque" "RenderPipeline" = "UniversalRenderPipeline"}
 
-        CGPROGRAM
-        // Physically based Standard lighting model, and enable shadows on all light types
-        #pragma surface surf Standard fullforwardshadows
-
-        // Use shader model 3.0 target, to get nicer looking lighting
-        #pragma target 3.0
-
-        sampler2D _MainTex;
-
-        struct Input
+        Pass
         {
-            float2 uv_MainTex;
+            Tags { "LightMode" = "UniversalForward" }
+
+            HLSLPROGRAM
+            #pragma vertex vert
+            #pragma fragment frag
+
+        // -------------------------------------
+        // Universal Render Pipeline keywords
+        #pragma multi_compile _ _MAIN_LIGHT_SHADOWS
+        #pragma multi_compile _ _MAIN_LIGHT_SHADOWS_CASCADE
+        #pragma multi_compile _ _SHADOWS_SOFT
+
+        #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
+        #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
+
+        struct Attributes
+        {
+            float4 positionOS   : POSITION;
+            float2 uv           : TEXCOORD0;
         };
 
-        half _Glossiness;
-        half _Metallic;
-        fixed4 _Color;
-
-        // Add instancing support for this shader. You need to check 'Enable Instancing' on materials that use the shader.
-        // See https://docs.unity3d.com/Manual/GPUInstancing.html for more information about instancing.
-        // #pragma instancing_options assumeuniformscaling
-        UNITY_INSTANCING_BUFFER_START(Props)
-            // put more per-instance properties here
-        UNITY_INSTANCING_BUFFER_END(Props)
-
-        void surf (Input IN, inout SurfaceOutputStandard o)
+        struct Varyings
         {
-            // Albedo comes from a texture tinted by color
-            fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * _Color;
-            o.Albedo = c.rgb;
-            // Metallic and smoothness come from slider variables
-            o.Metallic = _Metallic;
-            o.Smoothness = _Glossiness;
-            o.Alpha = c.a;
+            float2 uv           : TEXCOORD0;
+            float3 positionWS   : TEXCOORD1;
+            float4 positionHCS  : SV_POSITION;
+        };
+
+        TEXTURE2D(_BaseMap);
+        SAMPLER(sampler_BaseMap);
+
+        CBUFFER_START(UnityPerMaterial)
+        float4 _BaseMap_ST;
+        half4 _BaseColor;
+        CBUFFER_END
+
+        Varyings vert(Attributes IN)
+        {
+            Varyings OUT;
+
+            // GetVertexPositionInputs computes position in different spaces (ViewSpace, WorldSpace, Homogeneous Clip Space)
+            VertexPositionInputs positionInputs = GetVertexPositionInputs(IN.positionOS.xyz);
+            OUT.positionHCS = positionInputs.positionCS;
+            OUT.positionWS = positionInputs.positionWS;
+            OUT.uv = TRANSFORM_TEX(IN.uv, _BaseMap);
+            return OUT;
         }
-        ENDCG
+
+        half4 frag(Varyings IN) : SV_Target
+        {
+            // shadowCoord is position in shadow light space
+            float4 shadowCoord = TransformWorldToShadowCoord(IN.positionWS);
+            Light mainLight = GetMainLight(shadowCoord);
+            half4 color = SAMPLE_TEXTURE2D(_BaseMap, sampler_BaseMap, IN.uv) * _BaseColor;
+            color *= mainLight.shadowAttenuation;
+            return color;
+        }
+        ENDHLSL
     }
-    FallBack "Diffuse"
+
+        // Used for rendering shadowmaps
+        // TODO: there's one issue with adding this UsePass here, it won't make this shader compatible with SRP Batcher
+        // as the ShadowCaster pass from Lit shader is using a different UnityPerMaterial CBUFFER. 
+        // Maybe we should add a DECLARE_PASS macro that allows to user to inform the UnityPerMaterial CBUFFER to use?
+        UsePass "Universal Render Pipeline/Lit/ShadowCaster"
+    }
 }

@@ -23,7 +23,7 @@ public static class Constants
     public const float CRITICAL_DAMAGE_MULTIPLIER = 1.5f;
     public const float DODGE_CHANCE = 15;
     public const int NOT_DODGED_ATTACKS_LIMIT = 4;
-    public const int CHARACTER_SPEED_VALUE = 2;
+    public const float CHARACTER_SPEED_VALUE = 1.5f;
 
     public const string WALK_ANIMATION_TRIGGER = "Walk";
     public const string IDLE_ANIMATION_TRIGGER = "Idle";
@@ -33,8 +33,8 @@ public static class Constants
     public const string SHOOT_ANIMATION_TRIGGER = "Shoot";
     public const string ROTATE_ANIMATION_TRIGGER = "Rotate";
 
-    public const string FATWIMP_AVATAR_INFO = "This avatar's max HP will be increased by 50%.";
-    public const string FATMUSCULAR_AVATAR_INFO = "This avatar will have à 15% chance to deal 150% critical damage.";
-    public const string THINWIMP_AVATAR_INFO = "This avatar will have à 15% chance to dodge any damage.";
-    public const string THINMUSCULAR_AVATAR_INFO = "This avatar's speed will be increased by 100%.";
+    public const string FATWIMP_AVATAR_INFO = "Max HP +50%";
+    public const string FATMUSCULAR_AVATAR_INFO = "15% chance to deal 150% critical damage";
+    public const string THINWIMP_AVATAR_INFO = "15% chance to dodge attacks";
+    public const string THINMUSCULAR_AVATAR_INFO = "Speed +50%";
 }

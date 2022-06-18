@@ -18,8 +18,8 @@ public class WeaponPreview : MonoBehaviour
 
     private void Start()
     {
-        rootTransform.DORotate(rotateTo, rotateAnimationTime).SetLoops(-1, LoopType.Yoyo);
-        rootTransform.DOLocalMoveY(moveY, moveAnimationTime).SetLoops(-1, LoopType.Yoyo);
+        //rootTransform.DORotate(rotateTo, rotateAnimationTime).SetLoops(-1, LoopType.Yoyo);
+        //rootTransform.DOLocalMoveY(moveY, moveAnimationTime).SetLoops(-1, LoopType.Yoyo);
     }
 
     public void ApplyTipMaterial(TipMaterialEnum tipMaterialToSet)
