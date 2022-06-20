@@ -7587,7 +7587,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.13333334
   m_MinRegionArea: 2
-  m_NavMeshData: {fileID: 23800000, guid: 7cb7b3b4d6210c64199757ac295232f8, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 46fa01d52953d94489f229a2145a380c, type: 2}
   m_BuildHeightMesh: 0
 --- !u!114 &1589692794
 MonoBehaviour:
@@ -27056,10 +27056,18 @@ PrefabInstance:
       propertyPath: m_AbilityData.Array.data[11].m_ValuePositions.Array.data[78]
       value: 226
       objectReference: {fileID: 0}
+    - target: {fileID: 5293128990189345519, guid: e66853f5a380276489d69e2fa639e30d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6781247767183895060, guid: e66853f5a380276489d69e2fa639e30d, type: 3}
       propertyPath: characterCameraController
       value: 
       objectReference: {fileID: 1011606490}
+    - target: {fileID: 6982150651244377517, guid: e66853f5a380276489d69e2fa639e30d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e66853f5a380276489d69e2fa639e30d, type: 3}
 --- !u!4 &7447725272823871900
@@ -27677,6 +27685,14 @@ PrefabInstance:
     - target: {fileID: 1409884567823131384, guid: 596c13e2bccddb84db50d22a3163cdfc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2303063145515102997, guid: 596c13e2bccddb84db50d22a3163cdfc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3920227864776580183, guid: 596c13e2bccddb84db50d22a3163cdfc, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 596c13e2bccddb84db50d22a3163cdfc, type: 3}
