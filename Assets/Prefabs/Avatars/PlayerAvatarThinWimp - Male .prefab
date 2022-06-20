@@ -5198,7 +5198,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: dc71eb033f236ec4db74fb1ac9bc2a47, type: 2}
     - target: {fileID: 5093796026008640471, guid: 1c4b7923fac51e846a1c3de6d4fc8ec0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5899680674082482988, guid: 1c4b7923fac51e846a1c3de6d4fc8ec0, type: 3}
       propertyPath: characterCameraController

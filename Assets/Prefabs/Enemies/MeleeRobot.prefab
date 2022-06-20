@@ -1665,6 +1665,7 @@ MonoBehaviour:
   aoeAttackTransform: {fileID: 6090688679482954575}
   finalScale: 6
   duration: 2
+  aoeAttackHitDetector: {fileID: 2227861341854204314}
 --- !u!114 &7586416055763774272
 MonoBehaviour:
   m_ObjectHideFlags: 0

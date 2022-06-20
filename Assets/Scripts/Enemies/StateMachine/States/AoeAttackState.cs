@@ -7,6 +7,7 @@ public class AoeAttackState : BaseState
     [SerializeField] private Transform aoeAttackTransform;
     [SerializeField] private float finalScale;
     [SerializeField] private float duration;
+    [SerializeField] private HitDetector aoeAttackHitDetector;
 
     private float startScale;
 
@@ -44,6 +45,7 @@ public class AoeAttackState : BaseState
     {
         aoeAttackTransform.localScale = new Vector3(startScale, aoeAttackTransform.localScale.y, startScale);
         aoeAttackTransform.gameObject.SetActive(false);
+        aoeAttackHitDetector.ClearHittedTargets();
     }
 
     protected override void OnDisable()
