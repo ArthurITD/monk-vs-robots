@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 215f201e8ef32454cabb08d6394a3f1f
+guid: 7f6c3fc3b4fc32043ba3b92fe9a2b323
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
@@ -324,14 +324,6 @@ ModelImporter:
         value: {x: 0, y: 0, z: 0}
         length: 0
         modified: 0
-    - boneName: mohawk_with_a_tail.007
-      humanName: Jaw
-      limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
-        value: {x: 0, y: 0, z: 0}
-        length: 0
-        modified: 0
     - boneName: ORG-f_index.01.L
       humanName: Left Index Proximal
       limit:
@@ -466,11 +458,6 @@ ModelImporter:
     - name: eye.007
       parentName: ORG-head
       position: {x: -5.772505e-10, y: -0.017678607, z: -0.0021779458}
-      rotation: {x: -0.6776016, y: 0.00000008716862, z: 0.00000008132381, w: 0.73542917}
-      scale: {x: 1, y: 0.9999998, z: 1}
-    - name: mohawk_with_a_tail.007
-      parentName: ORG-head
-      position: {x: -0.0000035709913, y: 0.0016901456, z: 0.00023190348}
       rotation: {x: -0.6776016, y: 0.00000008716862, z: 0.00000008132381, w: 0.73542917}
       scale: {x: 1, y: 0.9999998, z: 1}
     - name: White_eye.007

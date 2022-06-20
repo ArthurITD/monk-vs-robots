@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5b71859ff579afc4e8f52220b64813cf
+guid: eb82751172a6c334a9d3994f6a9a82bd
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
@@ -415,13 +415,13 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: ThinMuscualrFemale(Clone)
+    - name: ThinMuscularFemale(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: rig
-      parentName: ThinMuscualrFemale(Clone)
+      parentName: ThinMuscularFemale(Clone)
       position: {x: -0, y: 0, z: 0.044756822}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
       scale: {x: 100, y: 100, z: 100}
@@ -836,22 +836,22 @@ ModelImporter:
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: skinny_buff_woman
-      parentName: ThinMuscualrFemale(Clone)
+      parentName: ThinMuscularFemale(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
       scale: {x: 100, y: 100, z: 100}
     - name: suit.004
-      parentName: ThinMuscualrFemale(Clone)
+      parentName: ThinMuscularFemale(Clone)
       position: {x: -0, y: 1.0625087, z: 0.27129644}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
       scale: {x: 100, y: 100, z: 100}
     - name: bandanna.002
-      parentName: ThinMuscualrFemale(Clone)
+      parentName: ThinMuscularFemale(Clone)
       position: {x: -0, y: 1.450146, z: 0.2922291}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
       scale: {x: 100, y: 100, z: 100}
     - name: bandages.006
-      parentName: ThinMuscualrFemale(Clone)
+      parentName: ThinMuscularFemale(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
       scale: {x: 100, y: 100, z: 100}
